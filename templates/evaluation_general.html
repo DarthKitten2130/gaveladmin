@@ -124,7 +124,7 @@ Say</span>
 It</span>
 </p>
 </div>
-<form id="input">
+<form id="data" method="post">
 <p class="c47">
 <span class="c20">
 Title: <input type="text" size="50" name="title" id="title"></span>
@@ -138,6 +138,7 @@ Evaluator: <select name="evaluator" id="evaluator" required>
     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 Date: <input type="date" name="date" id="date"></span>
 </p>
+</form>
 <div>
 <p class="c37">
 <span class="c10">
@@ -492,7 +493,7 @@ item.<br>
 <br>
 <br>
 <table class="c43" style="margin: auto;">
-<tr class="c3">
+<tr class="c3" id="titles">
 <td class="c16" colspan="1" rowspan="1">
 <p class="c19">
 <span class="c5 c49">
@@ -524,7 +525,8 @@ Could Improve</span>
 </p>
 </td>
 </tr>
-<tr class="c3">
+<tr class="c3" id="q1">
+<form method="post" id="q1">
 <td class="c16" colspan="1" rowspan="1">
 <p class="c41">
 <span class="c1 c28">
@@ -544,91 +546,110 @@ Was the speech topic appropriate for this particular assignment?</span>
 <td class="c6" colspan="1" rowspan="1">
 <p class="c0">
 <span class="c5 c2">
+    <input type="radio" name="q1" id="q11" value="excellent">
 </span>
 </p>
 </td>
 <td class="c15" colspan="1" rowspan="1">
 <p class="c0">
 <span class="c5 c2">
+    <input type="radio" name="q1" id="q12" value="satisfactory">
 </span>
 </p>
 </td>
 <td class="c13" colspan="1" rowspan="1">
 <p class="c0">
 <span class="c5 c2">
+    <input type="radio" name="q1" id="q13" value="could improve">
 </span>
 </p>
 </td>
+</form>
 </tr>
-<tr class="c3">
-<td class="c16" colspan="1" rowspan="1">
-<p class="c41">
-<span class="c26">
-&nbsp;</span>
-<span class="c1">
-Did the speaker use simple, short and clear words?</span>
-</p>
-</td>
-<td class="c11" colspan="1" rowspan="1">
-<p class="c0">
-<span class="c5 c12">
-</span>
-</p>
-</td>
-<td class="c6" colspan="1" rowspan="1">
-<p class="c0">
-<span class="c5 c2">
-</span>
-</p>
-</td>
-<td class="c15" colspan="1" rowspan="1">
-<p class="c0">
-<span class="c5 c2">
-</span>
-</p>
-</td>
-<td class="c13" colspan="1" rowspan="1">
-<p class="c0">
-<span class="c5 c2">
-</span>
-</p>
-</td>
+<tr class="c3" id="q2">
+    <form method="post" id="q2">
+    <td class="c16" colspan="1" rowspan="1">
+    <p class="c41">
+    <span class="c1 c28">
+        Did the speaker use simple, short and clear words?
+    </span>
+    </p>
+    <p class="c0">
+    <span class="c5 c12">
+    </span>
+    </p>
+    </td>
+    <td class="c11" colspan="1" rowspan="1">
+    <p class="c0">
+    <span class="c5 c12">
+    </span>
+    </p>
+    </td>
+    <td class="c6" colspan="1" rowspan="1">
+    <p class="c0">
+    <span class="c5 c2">
+        <input type="radio" name="q2" id="q21" value="excellent">
+    </span>
+    </p>
+    </td>
+    <td class="c15" colspan="1" rowspan="1">
+    <p class="c0">
+    <span class="c5 c2">
+        <input type="radio" name="q2" id="q22" value="satisfactory">
+    </span>
+    </p>
+    </td>
+    <td class="c13" colspan="1" rowspan="1">
+    <p class="c0">
+    <span class="c5 c2">
+        <input type="radio" name="q2" id="q23" value="could improve">
+    </span>
+    </p>
+    </td>
+    </form>
 </tr>
-<tr class="c3">
-<td class="c16" colspan="1" rowspan="1">
-<p class="c14">
-<span class="c26">
-&nbsp;</span>
-<span class="c1">
-Did the speaker use vivid, descriptive words that created mental images?</span>
-</p>
-</td>
-<td class="c11" colspan="1" rowspan="1">
-<p class="c0">
-<span class="c5 c12">
-</span>
-</p>
-</td>
-<td class="c6" colspan="1" rowspan="1">
-<p class="c0">
-<span class="c5 c2">
-</span>
-</p>
-</td>
-<td class="c15" colspan="1" rowspan="1">
-<p class="c0">
-<span class="c5 c2">
-</span>
-</p>
-</td>
-<td class="c13" colspan="1" rowspan="1">
-<p class="c0">
-<span class="c5 c2">
-</span>
-</p>
-</td>
-</tr>
-<tr class="c3">
+<tr class="c3" id="q3">
+    <form method="post" id="q3">
+    <td class="c16" colspan="1" rowspan="1">
+    <p class="c41">
+    <span class="c1 c28">
+        Did the speaker use words that had more than one meaning or were inaccurate?</span>
+    </p>
+    <p class="c0">
+    <span class="c5 c12">
+    </span>
+    </p>
+    </td>
+    <td class="c11" colspan="1" rowspan="1">
+    <p class="c0">
+    <span class="c5 c12">
+    </span>
+    </p>
+    </td>
+    <td class="c6" colspan="1" rowspan="1">
+    <p class="c0">
+    <span class="c5 c2">
+        <input type="radio" name="q3" id="q31" value="excellent">
+    </span>
+    </p>
+    </td>
+    <td class="c15" colspan="1" rowspan="1">
+    <p class="c0">
+    <span class="c5 c2">
+        <input type="radio" name="q3" id="q32" value="satisfactory">
+    </span>
+    </p>
+    </td>
+    <td class="c13" colspan="1" rowspan="1">
+    <p class="c0">
+    <span class="c5 c2">
+        <input type="radio" name="q3" id="q33" value="could improve">
+    </span>
+    </p>
+    </td>
+    </form>
+    </tr>
+<tr class="c3" id="q4">
 <td class="c16" colspan="1" rowspan="1">
 <p class="c44">
 <span class="c1">
@@ -660,7 +681,7 @@ Did the speaker use words that had more than one meaning or were inaccurate?</sp
 </p>
 </td>
 </tr>
-<tr class="c3">
+<tr class="c3" id="q5">
 <td class="c16" colspan="1" rowspan="1">
 <p class="c29">
 <span class="c1">
@@ -692,7 +713,7 @@ Were the speaker&#39;s sentences short, simple and understandable?</span>
 </p>
 </td>
 </tr>
-<tr class="c3">
+<tr class="c3" id="q6">
 <td class="c16" colspan="1" rowspan="1">
 <p class="c46">
 <span class="c1">
@@ -724,7 +745,7 @@ Did the speaker use rhetorical devices to enhance his or her ideas?</span>
 </p>
 </td>
 </tr>
-<tr class="c3">
+<tr class="c3" id="q7">
 <td class="c16" colspan="1" rowspan="1">
 <p class="c21">
 <span class="c1">
@@ -756,7 +777,7 @@ Did the speaker avoid jargon and unnecessary words?</span>
 </p>
 </td>
 </tr>
-<tr class="c3">
+<tr class="c3" id="q8">
 <td class="c16" colspan="1" rowspan="1">
 <p class="c38">
 <span class="c1">
@@ -788,7 +809,7 @@ Did the speaker use proper grammar and pronunciation?</span>
 </p>
 </td>
 </tr>
-<tr class="c3">
+<tr class="c3" id="q9">
 <td class="c16" colspan="1" rowspan="1">
 <p class="c45">
 <span class="c1">
@@ -820,7 +841,7 @@ Did the speaker use proper grammar and pronunciation?</span>
 </p>
 </td>
 </tr>
-<tr class="c3">
+<tr class="c3" id="q10">
 <td class="c16" colspan="1" rowspan="1">
 <p class="c8">
 <span class="c28 c1">
@@ -865,42 +886,10 @@ Was the speech effectively organized?</span>
 <span class="c17">
 What could the speaker have done differently to make the speech more effective?</span>
 </p>
-<p class="c18">
-<span class="c5 c25">
-</span>
-</p>
-<p class="c18">
-<span class="c5 c25">
-</span>
-</p>
-<p class="c18">
-<span class="c5 c25">
-</span>
-</p>
-<p class="c18">
-<span class="c5 c25">
-</span>
-</p>
-<p class="c18">
-<span class="c5 c25">
-</span>
-</p>
-<p class="c18">
-<span class="c5 c9">
-</span>
-</p>
-<p class="c18">
-<span class="c5 c9">
-</span>
-</p>
-<p class="c18">
-<span class="c5 c9">
-</span>
-</p>
-<p class="c18">
-<span class="c5 c9">
-</span>
-</p>
+<br>
+<br>
+<br>
+<br>
 <p class="c30">
 <span class="c17">
 What did you like about the speech?</span>
@@ -909,6 +898,5 @@ What did you like about the speech?</span>
 <span class="c28 c24 c48">
 </span>
 </p>
-</form>
 </body>
 </html>
