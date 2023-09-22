@@ -1,5 +1,4 @@
 <html>
-
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 <style type="text/css">
@@ -75,7 +74,7 @@ EVALUATION GUIDE FOR THE ICE BREAKER</span>
 </p>
 <p class="c19">
 <span class="c5 c0">
-Title: <input type="text" size="50" name="title" id="title"></span>
+Title: <input type="text" size="50" name="title" id="title" required></span>
 </p>
 <p class="c10">
 <span class="c5 c0">
@@ -83,18 +82,18 @@ ________________________________________________________________________________
 </p>
 <p class="c32">
 <span class="c5 c0">
-Evaluator: <select name="evaluator" id="evaluator">
+Evaluator: <select name="evaluator" id="evaluator" required>
 <option value="sathvik">Sathvik</option>
 <option value="anuroop">Anuroop</option>
 </select> 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-Class/Section: <select name="class" id="class">
+Class/Section: <select name="class" id="class" required>
     <option value="9">9</option>
     <option value="10">10</option>
     <option value="11">11</option>
     <option value="12">12</option>
 </select> / 
-<select name="section" id="section">
+<select name="section" id="section" required>
     <option value="a">A</option>
     <option value="b">B</option>
     <option value="c">C</option>
@@ -115,8 +114,8 @@ Class/Section: <select name="class" id="class">
     <option value="r">R</option>
     <option value="s">S</option>
 </select> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-Date: <input type="date" name="date" id="date"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-Meeting No.: <input type="number" min="0" max="99" name="meeting-no" id="meeting-no"></span>
+Date: <input type="date" name="date" id="date" required> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Meeting No: <input type="number" min="0" max="99" name="meeting-no" id="meeting-no" required></span>
 </p>
 <p class="c13">
 <span class="c7 c0">
@@ -144,7 +143,11 @@ Evaluator:</span>
 <span class="c0 c23">
 &nbsp;</span>
 <span class="c0">
-In this speech, the new member is to introduce himself/herself to the club and begin speaking before an audience. The speech should have a clear beginning, body, and ending. The speaker has been advised to use notes if necessary and not to be concerned with gestures. Be encouraging and point out the speaker&rsquo;s strong points while gently and kindly mentioning areas that could be improved. Strive to have the speaker look forward to giving another speech. Your evaluation should help the speaker feel glad about joining the Gavel club and presenting this speech. In addition to your verbal evaluation, please write answers to the questions below</span>
+In this speech, the new member is to introduce himself/herself to the club and begin speaking before an audience. 
+The speech should have a clear beginning, body, and ending. The speaker has been advised to use notes if necessary and not to be concerned
+ with gestures. Be encouraging and point out the speaker&rsquo;s strong points while gently and kindly mentioning areas that could be 
+ improved. Strive to have the speaker look forward to giving another speech. Your evaluation should help the speaker feel glad about 
+ joining the Gavel club and presenting this speech. In addition to your verbal evaluation, please write answers to the questions below</span>
 <span class="c0 c34">
 .</span>
 </p>
@@ -154,20 +157,7 @@ What strong points does the speaker have</span>
 <span class="c0 c8 c34">
 ?</span>
 </p>
-<ul class="c11 lst-kix_sj888dzgsiy7-0 start">
-<li class="c4 li-bullet-0">
-<span class="c7 c0">
-good </span>
-</li>
-<li class="c4 li-bullet-0">
-<span class="c7 c0">
-structuring of sentences </span>
-</li>
-<li class="c4 li-bullet-0">
-<span class="c7 c0">
-good vocabulary</span>
-</li>
-</ul>
+<textarea name="q1" id="q1" cols="100" rows="6" required></textarea>
 <p class="c2">
 <span class="c7 c0">
 </span>
@@ -176,16 +166,7 @@ good vocabulary</span>
 <span class="c0 c8">
 How well did the audience get to know the speaker?</span>
 </p>
-<ul class="c11 lst-kix_k5az0dozos2y-0 start">
-<li class="c17 li-bullet-0">
-<span class="c7 c0">
-a well rounded speech</span>
-</li>
-<li class="c17 li-bullet-0">
-<span class="c7 c0">
-got to know him well</span>
-</li>
-</ul>
+<textarea name="q2" id="q2" cols="100" rows="6" required></textarea>
 <p class="c25">
 <span class="c7 c0">
 </span>
@@ -194,10 +175,7 @@ got to know him well</span>
 <span class="c5 c0">
 Did the speech reflect adequate preparation?</span>
 </p>
-<p class="c16">
-<span class="c7 c0">
-yes</span>
-</p>
+<textarea name="q3" id="q3" cols="100" rows="6" required></textarea>
 <p class="c16 c30">
 <span class="c7 c0">
 </span>
@@ -206,10 +184,7 @@ yes</span>
 <span class="c5 c0">
 Did the speaker talk clearly and audibly?</span>
 </p>
-<p class="c31">
-<span class="c7 c0">
-yes</span>
-</p>
+<textarea name="q4" id="q4" cols="100" rows="6" required></textarea>
 <p class="c28">
 <span class="c0 c7">
 </span>
@@ -222,10 +197,7 @@ yes</span>
 <span class="c0 c5">
 Did the speech have a definite opening, body, and conclusion?</span>
 </p>
-<p class="c26">
-<span class="c7 c0">
-yes, but can work on structure of the speech</span>
-</p>
+<textarea name="q5" id="q5" cols="100" rows="6" required></textarea>
 <p class="c1">
 <span class="c7 c0">
 </span>
@@ -238,28 +210,12 @@ yes, but can work on structure of the speech</span>
 <span class="c0 c14 c22">
 Please comment on the speaker&#39;s use of notes.</span>
 </p>
-<p class="c33 c20">
-<span class="c7 c0">
-no notes used</span>
-</p>
+<textarea name="q6" id="q6" cols="100" rows="6" required></textarea>
 <p class="c21">
 <span class="c5 c0">
 What could the speaker have done differently that would have improved the speech?</span>
 </p>
-<ul class="c11 lst-kix_gm554me1vsjn-0 start">
-<li class="c9 li-bullet-0">
-<span class="c7 c0">
-longer speech </span>
-</li>
-<li class="c9 li-bullet-0">
-<span class="c7 c0">
-less movement of body while speaking </span>
-</li>
-<li class="c9 li-bullet-0">
-<span class="c7 c0">
-more voice modulation </span>
-</li>
-</ul>
+<textarea name="q7" id="q7" cols="100" rows="6" required></textarea>
 <p class="c24">
 <span class="c7 c0">
 </span>
@@ -268,22 +224,14 @@ more voice modulation </span>
 <span class="c5 c0">
 What did you like about the presentation?</span>
 </p>
-<ul class="c11 lst-kix_e6ccy1ronprr-0 start">
-<li class="c18 c27 li-bullet-0">
-<span class="c7 c0">
-was funny </span>
-</li>
-<li class="c18 c27 li-bullet-0">
-<span class="c0">
-spoke fluently</span>
-<span class="c5 c0">
-&nbsp;</span>
-</li>
-</ul>
+<textarea name="q8" id="q8" cols="100" rows="6" required></textarea>
+<br>
+<br>
+<input type="submit" value="submit"></input>
 </form>
 <script>
     // JavaScript to save form data to localStorage when inputs change
-    const inputIds = ['title', 'evaluator', 'class', 'section', 'date', 'meeting-no'];
+    const inputIds = ['title', 'evaluator', 'class', 'section', 'date', 'meeting-no','q1','q2','q3','q4','q5','q6','q7','q8'];
 
     inputIds.forEach((id) => {
         const inputElement = document.getElementById(id);
