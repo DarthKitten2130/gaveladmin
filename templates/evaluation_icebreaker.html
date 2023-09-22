@@ -61,6 +61,7 @@ li:before{content:"\0025cf   "}ol{margin:0;padding:0}table td,table th{padding:0
 </head>
 <body class="c36 doc-content" style="max-width:960px;margin:auto">
 <p class="c29" id="h.gjdgxs">
+<form id="input">
 <span class="c15">
 EVALUATION GUIDE FOR THE ICE BREAKER</span>
 </p>
@@ -74,15 +75,48 @@ EVALUATION GUIDE FOR THE ICE BREAKER</span>
 </p>
 <p class="c19">
 <span class="c5 c0">
-Title:</span>
+Title: <input type="text" size="50" name="title" id="title"></span>
 </p>
 <p class="c10">
 <span class="c5 c0">
-____________________________________________________________________________</span>
+____________________________________________________________________________________________</span>
 </p>
 <p class="c32">
 <span class="c5 c0">
-Evaluator: Amogha &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Class/Section: 10/E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Date/Meeting No. 8/9/23 Meeting No. 2</span>
+Evaluator: <select name="evaluator" id="evaluator">
+<option value="sathvik">Sathvik</option>
+<option value="anuroop">Anuroop</option>
+</select> 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Class/Section: <select name="class" id="class">
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select> / 
+<select name="section" id="section">
+    <option value="a">A</option>
+    <option value="b">B</option>
+    <option value="c">C</option>
+    <option value="d">D</option>
+    <option value="e">E</option>
+    <option value="f">F</option>
+    <option value="g">G</option>
+    <option value="h">H</option>
+    <option value="i">I</option>
+    <option value="j">J</option>
+    <option value="k">K</option>
+    <option value="l">L</option>
+    <option value="m">M</option>
+    <option value="n">N</option>
+    <option value="o">O</option>
+    <option value="p">P</option>
+    <option value="q">Q</option>
+    <option value="r">R</option>
+    <option value="s">S</option>
+</select> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Date: <input type="date" name="date" id="date"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Meeting No.: <input type="number" min="0" max="99" name="meeting-no" id="meeting-no"></span>
 </p>
 <p class="c13">
 <span class="c7 c0">
@@ -246,5 +280,31 @@ spoke fluently</span>
 &nbsp;</span>
 </li>
 </ul>
+</form>
+<script>
+    // JavaScript to save form data to localStorage when inputs change
+    const inputIds = ['title', 'evaluator', 'class', 'section', 'date', 'meeting-no'];
+
+    inputIds.forEach((id) => {
+        const inputElement = document.getElementById(id);
+
+        inputElement.addEventListener('input', () => {
+            localStorage.setItem(id, inputElement.value);
+        });
+
+        // Populate the form field from localStorage on page load
+        const storedValue = localStorage.getItem(id);
+        if (storedValue) {
+            inputElement.value = storedValue;
+        }
+    });
+
+    // JavaScript to clear localStorage on form submission
+    document.getElementById('myForm').addEventListener('submit', () => {
+        inputIds.forEach((id) => {
+            localStorage.removeItem(id);
+        });
+    });
+</script>
 </body>
 </html>
