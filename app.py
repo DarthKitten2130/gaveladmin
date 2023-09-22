@@ -9,8 +9,13 @@ def home():
 
 
 @app.route('/iceeval', methods=['GET', 'POST'])
-def evaluation_icebrekaer():
+def evaluation_icebreaker():
     return templating.render_template("evaluation_icebreaker.html")
+
+
+@app.route('/geneval', methods=['GET', 'POST'])
+def evaluation_general():
+    return templating.render_template("evaluation_general.html")
 
 
 if __name__ == "__main__":
