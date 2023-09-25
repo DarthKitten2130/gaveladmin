@@ -4,13 +4,23 @@ body {
     border: 1px solid black;
     margin-top: 40px;
     margin-bottom: 40px; 
+
 }
 
 textarea {
     width: 630px;
     height: 30%;
+
 }
 
 hr {
     border-top: 1px solid black;
+
+}
+
+input[type=radio] {
+
+    display: flex;
+    margin: auto;
+
 }
