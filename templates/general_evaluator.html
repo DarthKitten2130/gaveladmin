@@ -21,6 +21,7 @@ GENERAL EVALUATOR SHEET</span>
 </a>
 <a id="t.0">
 </a>
+<form id="data">
 <table class="c48">
 <tr class="c31">
 <td class="c8" colspan="1" rowspan="1">
@@ -32,6 +33,7 @@ NAME</span>
 <td class="c3" colspan="1" rowspan="1">
 <p class="c23">
 <span class="c11 c18">
+    <input type="text" name="name" id="name" required>
 </span>
 </p>
 </td>
@@ -46,6 +48,32 @@ GRADE &amp; SECTION</span>
 <td class="c3" colspan="1" rowspan="1">
 <p class="c23">
 <span class="c11 c18">
+    <select name="grade" id="grade" required style="width: 234px;min-height: 30px;">
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select><select name="section" id="section" required style="width: 234px;height: 30px;">
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="g">G</option>
+        <option value="h">H</option>
+        <option value="i">I</option>
+        <option value="j">J</option>
+        <option value="k">K</option>
+        <option value="l">L</option>
+        <option value="m">M</option>
+        <option value="n">N</option>
+        <option value="o">O</option>
+        <option value="p">P</option>
+        <option value="q">Q</option>
+        <option value="r">R</option>
+        <option value="s">S</option>
+    </select>
 </span>
 </p>
 </td>
@@ -60,6 +88,7 @@ MEETING NUMBER</span>
 <td class="c3" colspan="1" rowspan="1">
 <p class="c23">
 <span class="c11 c18">
+    <input type="number" name="number" id="number" required min="0">
 </span>
 </p>
 </td>
@@ -74,6 +103,7 @@ DATE</span>
 <td class="c3" colspan="1" rowspan="1">
 <p class="c23">
 <span class="c11 c18">
+    <input type="date" name="date" id="date" required>
 </span>
 </p>
 </td>
@@ -266,6 +296,7 @@ Did the role takers satisfy their roles?</span>
 </td>
 </tr>
 </table>
+</form>
 <p class="c23">
 <span class="c11 c19">
 </span>

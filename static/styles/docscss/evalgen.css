@@ -894,3 +894,8 @@ orphans:2;
 widows:2;
 text-align:left}
 
+textarea {
+    width: 630px;
+    height: 200px;
+}
+
