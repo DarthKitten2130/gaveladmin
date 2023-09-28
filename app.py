@@ -8,14 +8,20 @@ def home():
     return templating.render_template("home.html")
 
 
-@app.route('/iceeval', methods=['GET', 'POST'])
+@app.route('/evalice', methods=['GET', 'POST'])
 def evaluation_icebreaker():
     return templating.render_template("evaluation_icebreaker.html")
 
 
-@app.route('/geneval', methods=['GET', 'POST'])
+@app.route('/evalgen', methods=['GET', 'POST'])
 def evaluation_general():
     return templating.render_template("evaluation_general.html")
+
+
+
+@app.route('/geneval', methods=['GET', 'POST'])
+def general_evaluator():
+    return templating.render_template("general_evaluator.html")
 
 
 if __name__ == "__main__":
