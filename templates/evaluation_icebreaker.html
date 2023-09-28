@@ -1,203 +1,211 @@
 <html>
+
 <head>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type">
-<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/docscss/evalice.css') }}">
-<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/evaluator.css') }}">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/docscss/evalice.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/evaluator.css') }}">
 </head>
+
 <body class="c36 doc-content">
-<p class="c29" id="h.gjdgxs">
-<form id="input" method="post">
-<span class="c15">
-EVALUATION GUIDE FOR THE ICE BREAKER</span>
-</p>
-<p class="c30 c35">
-<span class="c7 c0">
-</span>
-</p>
-<p class="c3">
-<span class="c7 c0">
-</span>
-</p>
-<p class="c19">
-<span class="c5 c0">
-Title: <input type="text" size="50" name="title" id="title" required></span>
-</p>
-<p class="c10">
-<hr>
-</p>
-<p class="c32">
-<span class="c5 c0">
-Evaluator: <select name="evaluator" id="evaluator" required>
-<option value="sathvik">Sathvik</option>
-<option value="anuroop">Anuroop</option>
-</select> 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-Class/Section: <select name="class" id="class" required>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-</select> / 
-<select name="section" id="section" required>
-    <option value="a">A</option>
-    <option value="b">B</option>
-    <option value="c">C</option>
-    <option value="d">D</option>
-    <option value="e">E</option>
-    <option value="f">F</option>
-    <option value="g">G</option>
-    <option value="h">H</option>
-    <option value="i">I</option>
-    <option value="j">J</option>
-    <option value="k">K</option>
-    <option value="l">L</option>
-    <option value="m">M</option>
-    <option value="n">N</option>
-    <option value="o">O</option>
-    <option value="p">P</option>
-    <option value="q">Q</option>
-    <option value="r">R</option>
-    <option value="s">S</option>
-</select> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-Date: <input type="date" name="date" id="date" required> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br><br>
-Meeting No: <input type="number" min="0" max="99" name="meeting-no" id="meeting-no" required></span>
-</p>
-<p class="c13">
-<span class="c7 c0">
-</span>
-</p>
-<p class="c13">
-<span class="c7 c0">
-</span>
-</p>
-<p class="c6">
-<span class="c12">
-Note</span>
-<span class="c0 c14">
-&nbsp;</span>
-<span class="c12">
-to</span>
-<span class="c0 c14">
-&nbsp;</span>
-<span class="c12">
-the</span>
-<span class="c0 c14">
-&nbsp;</span>
-<span class="c12">
-Evaluator:</span>
-<span class="c0 c23">
-&nbsp;</span>
-<span class="c0">
-In this speech, the new member is to introduce himself/herself to the club and begin speaking before an audience. 
-The speech should have a clear beginning, body, and ending. The speaker has been advised to use notes if necessary and not to be concerned
- with gestures. Be encouraging and point out the speaker&rsquo;s strong points while gently and kindly mentioning areas that could be 
- improved. Strive to have the speaker look forward to giving another speech. Your evaluation should help the speaker feel glad about 
- joining the Gavel club and presenting this speech. In addition to your verbal evaluation, please write answers to the questions below</span>
-<span class="c0 c34">
-.</span>
-</p>
-<p class="c37">
-<span class="c0 c8">
-What strong points does the speaker have</span>
-<span class="c0 c8 c34">
-?</span>
-</p>
-<textarea name="q1" id="q1" cols="80" rows="6" required></textarea>
-<p class="c2">
-<span class="c7 c0">
-</span>
-</p>
-<p class="c20 c21">
-<span class="c0 c8">
-How well did the audience get to know the speaker?</span>
-</p>
-<textarea name="q2" id="q2" cols="100" rows="6" required></textarea>
-<p class="c25">
-<span class="c7 c0">
-</span>
-</p>
-<p class="c18 c20">
-<span class="c5 c0">
-Did the speech reflect adequate preparation?</span>
-</p>
-<textarea name="q3" id="q3" cols="100" rows="6" required></textarea>
-<p class="c16 c30">
-<span class="c7 c0">
-</span>
-</p>
-<p class="c18 c20">
-<span class="c5 c0">
-Did the speaker talk clearly and audibly?</span>
-</p>
-<textarea name="q4" id="q4" cols="100" rows="6" required></textarea>
-<p class="c28">
-<span class="c0 c7">
-</span>
-</p>
-<p class="c28">
-<span class="c7 c0">
-</span>
-</p>
-<p class="c18 c20">
-<span class="c0 c5">
-Did the speech have a definite opening, body, and conclusion?</span>
-</p>
-<textarea name="q5" id="q5" cols="100" rows="6" required></textarea>
-<p class="c1">
-<span class="c7 c0">
-</span>
-</p>
-<p class="c1">
-<span class="c7 c0">
-</span>
-</p>
-<p class="c20 c33">
-<span class="c0 c14 c22">
-Please comment on the speaker&#39;s use of notes.</span>
-</p>
-<textarea name="q6" id="q6" cols="100" rows="6" required></textarea>
-<p class="c21">
-<span class="c5 c0">
-What could the speaker have done differently that would have improved the speech?</span>
-</p>
-<textarea name="q7" id="q7" cols="100" rows="6" required></textarea>
-<p class="c24">
-<span class="c7 c0">
-</span>
-</p>
-<p class="c18">
-<span class="c5 c0">
-What did you like about the presentation?</span>
-</p>
-<textarea name="q8" id="q8" cols="100" rows="6" required></textarea>
-<br>
-<br>
-<input type="submit" value="submit"></input>
-</form>
-<script>
-    // JavaScript to save form data to localStorage when inputs change
-    const inputIds = ['title', 'evaluator', 'class', 'section', 'date', 'meeting-no','q1','q2','q3','q4','q5','q6','q7','q8'];
+    <p class="c29" id="h.gjdgxs">
+    <form id="input" method="post">
+        <span class="c15">
+            EVALUATION GUIDE FOR THE ICE BREAKER</span>
+        </p>
+        <p class="c30 c35">
+            <span class="c7 c0">
+            </span>
+        </p>
+        <p class="c3">
+            <span class="c7 c0">
+            </span>
+        </p>
+        <p class="c19">
+            <span class="c5 c0">
+                Title: <input type="text" size="50" name="title" id="title" required></span>
+        </p>
+        <p class="c10">
+            <hr>
+        </p>
+        <p class="c32">
+            <span class="c5 c0">
+                Evaluator: <select name="evaluator" id="evaluator" required>
+                    <option value="sathvik">Sathvik</option>
+                    <option value="anuroop">Anuroop</option>
+                </select>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Class/Section: <select name="class" id="class" required>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select> /
+                <select name="section" id="section" required>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                    <option value="d">D</option>
+                    <option value="e">E</option>
+                    <option value="f">F</option>
+                    <option value="g">G</option>
+                    <option value="h">H</option>
+                    <option value="i">I</option>
+                    <option value="j">J</option>
+                    <option value="k">K</option>
+                    <option value="l">L</option>
+                    <option value="m">M</option>
+                    <option value="n">N</option>
+                    <option value="o">O</option>
+                    <option value="p">P</option>
+                    <option value="q">Q</option>
+                    <option value="r">R</option>
+                    <option value="s">S</option>
+                </select> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Date: <input type="date" name="date" id="date" required> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br><br>
+                Meeting No: <input type="number" min="0" max="99" name="meeting-no" id="meeting-no" required></span>
+        </p>
+        <p class="c13">
+            <span class="c7 c0">
+            </span>
+        </p>
+        <p class="c13">
+            <span class="c7 c0">
+            </span>
+        </p>
+        <p class="c6">
+            <span class="c12">
+                Note</span>
+            <span class="c0 c14">
+                &nbsp;</span>
+            <span class="c12">
+                to</span>
+            <span class="c0 c14">
+                &nbsp;</span>
+            <span class="c12">
+                the</span>
+            <span class="c0 c14">
+                &nbsp;</span>
+            <span class="c12">
+                Evaluator:</span>
+            <span class="c0 c23">
+                &nbsp;</span>
+            <span class="c0">
+                In this speech, the new member is to introduce himself/herself to the club and begin speaking before an
+                audience.
+                The speech should have a clear beginning, body, and ending. The speaker has been advised to use notes if
+                necessary and not to be concerned
+                with gestures. Be encouraging and point out the speaker&rsquo;s strong points while gently and kindly
+                mentioning areas that could be
+                improved. Strive to have the speaker look forward to giving another speech. Your evaluation should help
+                the speaker feel glad about
+                joining the Gavel club and presenting this speech. In addition to your verbal evaluation, please write
+                answers to the questions below</span>
+            <span class="c0 c34">
+                .</span>
+        </p>
+        <p class="c37">
+            <span class="c0 c8">
+                What strong points does the speaker have</span>
+            <span class="c0 c8 c34">
+                ?</span>
+        </p>
+        <textarea name="q1" id="q1" cols="80" rows="6" required></textarea>
+        <p class="c2">
+            <span class="c7 c0">
+            </span>
+        </p>
+        <p class="c20 c21">
+            <span class="c0 c8">
+                How well did the audience get to know the speaker?</span>
+        </p>
+        <textarea name="q2" id="q2" cols="100" rows="6" required></textarea>
+        <p class="c25">
+            <span class="c7 c0">
+            </span>
+        </p>
+        <p class="c18 c20">
+            <span class="c5 c0">
+                Did the speech reflect adequate preparation?</span>
+        </p>
+        <textarea name="q3" id="q3" cols="100" rows="6" required></textarea>
+        <p class="c16 c30">
+            <span class="c7 c0">
+            </span>
+        </p>
+        <p class="c18 c20">
+            <span class="c5 c0">
+                Did the speaker talk clearly and audibly?</span>
+        </p>
+        <textarea name="q4" id="q4" cols="100" rows="6" required></textarea>
+        <p class="c28">
+            <span class="c0 c7">
+            </span>
+        </p>
+        <p class="c28">
+            <span class="c7 c0">
+            </span>
+        </p>
+        <p class="c18 c20">
+            <span class="c0 c5">
+                Did the speech have a definite opening, body, and conclusion?</span>
+        </p>
+        <textarea name="q5" id="q5" cols="100" rows="6" required></textarea>
+        <p class="c1">
+            <span class="c7 c0">
+            </span>
+        </p>
+        <p class="c1">
+            <span class="c7 c0">
+            </span>
+        </p>
+        <p class="c20 c33">
+            <span class="c0 c14 c22">
+                Please comment on the speaker&#39;s use of notes.</span>
+        </p>
+        <textarea name="q6" id="q6" cols="100" rows="6" required></textarea>
+        <p class="c21">
+            <span class="c5 c0">
+                What could the speaker have done differently that would have improved the speech?</span>
+        </p>
+        <textarea name="q7" id="q7" cols="100" rows="6" required></textarea>
+        <p class="c24">
+            <span class="c7 c0">
+            </span>
+        </p>
+        <p class="c18">
+            <span class="c5 c0">
+                What did you like about the presentation?</span>
+        </p>
+        <textarea name="q8" id="q8" cols="100" rows="6" required></textarea>
+        <br>
+        <br>
+        <input type="submit" value="submit"></input>
+    </form>
+    <script>
+        // JavaScript to save form data to localStorage when inputs change
+        const inputIds = ['title', 'evaluator', 'class', 'section', 'date', 'meeting-no', 'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8'];
 
-    inputIds.forEach((id) => {
-        const inputElement = document.getElementById(id);
-
-        inputElement.addEventListener('input', () => {
-            localStorage.setItem(id, inputElement.value);
-        });
-
-        // Populate the form field from localStorage on page load
-        const storedValue = localStorage.getItem(id);
-        if (storedValue) {
-            inputElement.value = storedValue;
-        }
-    });
-
-    // JavaScript to clear localStorage on form submission
-    document.getElementById('myForm').addEventListener('submit', () => {
         inputIds.forEach((id) => {
-            localStorage.removeItem(id);
+            const inputElement = document.getElementById(id);
+
+            inputElement.addEventListener('input', () => {
+                localStorage.setItem(id, inputElement.value);
+            });
+
+            // Populate the form field from localStorage on page load
+            const storedValue = localStorage.getItem(id);
+            if (storedValue) {
+                inputElement.value = storedValue;
+            }
         });
-    });
-</script>
+
+        // JavaScript to clear localStorage on form submission
+        document.getElementById('myForm').addEventListener('submit', () => {
+            inputIds.forEach((id) => {
+                localStorage.removeItem(id);
+            });
+        });
+    </script>
 </body>
+
 </html>

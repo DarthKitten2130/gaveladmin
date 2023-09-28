@@ -1,312 +1,315 @@
 <html>
+
 <head>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 </head>
-<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/docscss/geneval.css') }}">
-<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/evaluator.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/docscss/geneval.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/evaluator.css') }}">
+
 <body class="c0 doc-content">
-<p class="c37">
-<span class="c11 c38">
-GENERAL EVALUATOR SHEET</span>
-</p>
-<p class="c1">
-<span class="c11 c38">
-</span>
-</p>
-<p class="c25 c26">
-<span class="c11 c19">
-</span>
-</p>
-<a id="t.11ec8b2479ec392720fcb12e68f9b4831ccf9fbf">
-</a>
-<a id="t.0">
-</a>
-<form id="data">
-<table class="c48">
-<tr class="c31">
-<td class="c8" colspan="1" rowspan="1">
-<p class="c29">
-<span class="c11 c4">
-NAME</span>
-</p>
-</td>
-<td class="c3" colspan="1" rowspan="1">
-<p class="c23">
-<span class="c11 c18">
-    <input type="text" name="name" id="name" required>
-</span>
-</p>
-</td>
-</tr>
-<tr class="c10">
-<td class="c8" colspan="1" rowspan="1">
-<p class="c46">
-<span class="c11 c13">
-GRADE &amp; SECTION</span>
-</p>
-</td>
-<td class="c3" colspan="1" rowspan="1">
-<p class="c23">
-<span class="c11 c18">
-    <select name="grade" id="grade" required style="width: 234px;min-height: 30px;">
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-    </select><select name="section" id="section" required style="width: 234px;height: 30px;">
-        <option value="a">A</option>
-        <option value="b">B</option>
-        <option value="c">C</option>
-        <option value="d">D</option>
-        <option value="e">E</option>
-        <option value="f">F</option>
-        <option value="g">G</option>
-        <option value="h">H</option>
-        <option value="i">I</option>
-        <option value="j">J</option>
-        <option value="k">K</option>
-        <option value="l">L</option>
-        <option value="m">M</option>
-        <option value="n">N</option>
-        <option value="o">O</option>
-        <option value="p">P</option>
-        <option value="q">Q</option>
-        <option value="r">R</option>
-        <option value="s">S</option>
-    </select>
-</span>
-</p>
-</td>
-</tr>
-<tr class="c10">
-<td class="c8" colspan="1" rowspan="1">
-<p class="c36">
-<span class="c11 c13">
-MEETING NUMBER</span>
-</p>
-</td>
-<td class="c3" colspan="1" rowspan="1">
-<p class="c23">
-<span class="c11 c18">
-    <input type="number" name="number" id="number" required min="0">
-</span>
-</p>
-</td>
-</tr>
-<tr class="c49">
-<td class="c8" colspan="1" rowspan="1">
-<p class="c32">
-<span class="c11 c13">
-DATE</span>
-</p>
-</td>
-<td class="c3" colspan="1" rowspan="1">
-<p class="c23">
-<span class="c11 c18">
-    <input type="date" name="date" id="date" required>
-</span>
-</p>
-</td>
-</tr>
-</table>
-<p class="c21 c25">
-<span class="c11 c19">
-</span>
-</p>
-<p class="c21 c25">
-<span class="c11 c19">
-</span>
-</p>
-<p class="c21 c25">
-<span class="c11 c19">
-</span>
-</p>
-<p class="c21">
-<span class="c9">
-Please answer the following:</span>
-</p>
-<p class="c25 c27">
-<span class="c11 c19">
-</span>
-</p>
-<a id="t.2e3a6286d7b99c723fb082cd9e70ac962aa728ef">
-</a>
-<a id="t.1">
-</a>
-<table class="c41">
-<tr class="c47">
-<td class="c5" colspan="1" rowspan="1">
-<p class="c30">
-<span class="c11 c13">
-1.</span>
-</p>
-</td>
-<td class="c12" colspan="1" rowspan="1">
-<p class="c35">
-<span class="c4 c11">
-How was the attendance? How &nbsp; many members were late?</span>
-</p>
-</td>
-<td class="c16" colspan="1" rowspan="1">
-<p class="c2">
-<span class="c11 c18">
-    <textarea style="width: 343px; height: 85px;" name="q1" id="q1" required></textarea>
-</span>
-</p>
-</td>
-</tr>
-<tr class="c6">
-<td class="c5" colspan="1" rowspan="1">
-<p class="c15">
-<span class="c11 c13">
-2.</span>
-</p>
-</td>
-<td class="c12" colspan="1" rowspan="1">
-<p class="c24">
-<span class="c4">
-What were the timings of the &nbsp; &nbsp; meeting? </span>
-<span class="c4 c7">
-(that</span>
-<span class="c4">
-&nbsp;</span>
-<span class="c4 c7">
-includes</span>
-<span class="c4">
-&nbsp;</span>
-<span class="c4 c7">
-when</span>
-<span class="c4">
-&nbsp;</span>
-<span class="c4 c7">
-it</span>
-<span class="c4">
-&nbsp;</span>
-<span class="c4 c7">
-started)</span>
-</p>
-</td>
-<td class="c16" colspan="1" rowspan="1">
-<p class="c2">
-<span class="c11 c18">
-    <textarea style="width: 343px; height: 99px;" name="q2" id="q2" required></textarea>
-</span>
-</p>
-</td>
-</tr>
-<tr class="c14">
-<td class="c5" colspan="1" rowspan="1">
-<p class="c34 c42">
-<span class="c11 c13">
-3.</span>
-</p>
-</td>
-<td class="c12" colspan="1" rowspan="1">
-<p class="c22">
-<span class="c4 c7">
-Flow</span>
-<span class="c4">
-&nbsp;</span>
-<span class="c4 c7">
-of</span>
-<span class="c4">
-&nbsp;</span>
-<span class="c4 c7">
-the</span>
-<span class="c4">
-&nbsp;</span>
-<span class="c4 c7">
-meeting</span>
-<span class="c11 c4">
-: How was the ROP followed and how many</span>
-</p>
-<p class="c33">
-<span class="c11 c4">
-times did the PO have to intrude?</span>
-</p>
-</td>
-<td class="c16" colspan="1" rowspan="1">
-<p class="c2">
-<span class="c11 c18">
-    <textarea style="width: 343px; height: 99px;" name="q3" id="q3" required></textarea>
-</span>
-</p>
-</td>
-</tr>
-<tr class="c39">
-<td class="c5" colspan="1" rowspan="1">
-<p class="c43">
-<span class="c11 c13">
-4.</span>
-</p>
-</td>
-<td class="c12" colspan="1" rowspan="1">
-<p class="c28">
-<span class="c11 c4">
-Were all the club traditions</span>
-</p>
-<p class="c45">
-<span class="c11 c4">
-followed?</span>
-</p>
-</td>
-<td class="c16" colspan="1" rowspan="1">
-<p class="c2">
-<span class="c11 c18">
-    <textarea style="width: 343px; height: 85px;" name="q4" id="q4" required></textarea>
-</span>
-</p>
-</td>
-</tr>
-<tr class="c50">
-<td class="c5" colspan="1" rowspan="1">
-<p class="c42 c44">
-<span class="c11 c13">
-&nbsp;5.</span>
-</p>
-</td>
-<td class="c12" colspan="1" rowspan="1">
-<p class="c40">
-<span class="c11 c4">
-Were all the members prepared for their roles?</span>
-</p>
-</td>
-<td class="c16" colspan="1" rowspan="1">
-<p class="c2">
-<span class="c11 c18">
-    <textarea style="width: 343px; height: 85px;" name="q5" id="q5" required></textarea>
-</span>
-</p>
-</td>
-</tr>
-<tr class="c20">
-<td class="c5" colspan="1" rowspan="1">
-<p class="c34">
-<span class="c11 c13">
-6.</span>
-</p>
-</td>
-<td class="c12" colspan="1" rowspan="1">
-<p class="c17">
-<span class="c11 c4">
-Did the role takers satisfy their roles?</span>
-</p>
-</td>
-<td class="c16" colspan="1" rowspan="1">
-<p class="c2">
-<span class="c11 c18">
-    <textarea style="width: 343px; height: 126px;" name="q6" id="q6" required></textarea>
-</span>
-</p>
-</td>
-</tr>
-</table>
-<br>
-<input type="submit" value="submit">
-</form>
-<p class="c23">
-<span class="c11 c19">
-</span>
-</p>
+    <p class="c37">
+        <span class="c11 c38">
+            GENERAL EVALUATOR SHEET</span>
+    </p>
+    <p class="c1">
+        <span class="c11 c38">
+        </span>
+    </p>
+    <p class="c25 c26">
+        <span class="c11 c19">
+        </span>
+    </p>
+    <a id="t.11ec8b2479ec392720fcb12e68f9b4831ccf9fbf">
+    </a>
+    <a id="t.0">
+    </a>
+    <form id="data">
+        <table class="c48">
+            <tr class="c31">
+                <td class="c8" colspan="1" rowspan="1">
+                    <p class="c29">
+                        <span class="c11 c4">
+                            NAME</span>
+                    </p>
+                </td>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c23">
+                        <span class="c11 c18">
+                            <input type="text" name="name" id="name" required>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c10">
+                <td class="c8" colspan="1" rowspan="1">
+                    <p class="c46">
+                        <span class="c11 c13">
+                            GRADE &amp; SECTION</span>
+                    </p>
+                </td>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c23">
+                        <span class="c11 c18">
+                            <select name="grade" id="grade" required style="width: 234px;min-height: 30px;">
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select><select name="section" id="section" required style="width: 234px;height: 30px;">
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                                <option value="e">E</option>
+                                <option value="f">F</option>
+                                <option value="g">G</option>
+                                <option value="h">H</option>
+                                <option value="i">I</option>
+                                <option value="j">J</option>
+                                <option value="k">K</option>
+                                <option value="l">L</option>
+                                <option value="m">M</option>
+                                <option value="n">N</option>
+                                <option value="o">O</option>
+                                <option value="p">P</option>
+                                <option value="q">Q</option>
+                                <option value="r">R</option>
+                                <option value="s">S</option>
+                            </select>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c10">
+                <td class="c8" colspan="1" rowspan="1">
+                    <p class="c36">
+                        <span class="c11 c13">
+                            MEETING NUMBER</span>
+                    </p>
+                </td>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c23">
+                        <span class="c11 c18">
+                            <input type="number" name="number" id="number" required min="0">
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c49">
+                <td class="c8" colspan="1" rowspan="1">
+                    <p class="c32">
+                        <span class="c11 c13">
+                            DATE</span>
+                    </p>
+                </td>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c23">
+                        <span class="c11 c18">
+                            <input type="date" name="date" id="date" required>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p class="c21 c25">
+            <span class="c11 c19">
+            </span>
+        </p>
+        <p class="c21 c25">
+            <span class="c11 c19">
+            </span>
+        </p>
+        <p class="c21 c25">
+            <span class="c11 c19">
+            </span>
+        </p>
+        <p class="c21">
+            <span class="c9">
+                Please answer the following:</span>
+        </p>
+        <p class="c25 c27">
+            <span class="c11 c19">
+            </span>
+        </p>
+        <a id="t.2e3a6286d7b99c723fb082cd9e70ac962aa728ef">
+        </a>
+        <a id="t.1">
+        </a>
+        <table class="c41">
+            <tr class="c47">
+                <td class="c5" colspan="1" rowspan="1">
+                    <p class="c30">
+                        <span class="c11 c13">
+                            1.</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c35">
+                        <span class="c4 c11">
+                            How was the attendance? How &nbsp; many members were late?</span>
+                    </p>
+                </td>
+                <td class="c16" colspan="1" rowspan="1">
+                    <p class="c2">
+                        <span class="c11 c18">
+                            <textarea style="width: 343px; height: 85px;" name="q1" id="q1" required></textarea>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c6">
+                <td class="c5" colspan="1" rowspan="1">
+                    <p class="c15">
+                        <span class="c11 c13">
+                            2.</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c24">
+                        <span class="c4">
+                            What were the timings of the &nbsp; &nbsp; meeting? </span>
+                        <span class="c4 c7">
+                            (that</span>
+                        <span class="c4">
+                            &nbsp;</span>
+                        <span class="c4 c7">
+                            includes</span>
+                        <span class="c4">
+                            &nbsp;</span>
+                        <span class="c4 c7">
+                            when</span>
+                        <span class="c4">
+                            &nbsp;</span>
+                        <span class="c4 c7">
+                            it</span>
+                        <span class="c4">
+                            &nbsp;</span>
+                        <span class="c4 c7">
+                            started)</span>
+                    </p>
+                </td>
+                <td class="c16" colspan="1" rowspan="1">
+                    <p class="c2">
+                        <span class="c11 c18">
+                            <textarea style="width: 343px; height: 99px;" name="q2" id="q2" required></textarea>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c14">
+                <td class="c5" colspan="1" rowspan="1">
+                    <p class="c34 c42">
+                        <span class="c11 c13">
+                            3.</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c22">
+                        <span class="c4 c7">
+                            Flow</span>
+                        <span class="c4">
+                            &nbsp;</span>
+                        <span class="c4 c7">
+                            of</span>
+                        <span class="c4">
+                            &nbsp;</span>
+                        <span class="c4 c7">
+                            the</span>
+                        <span class="c4">
+                            &nbsp;</span>
+                        <span class="c4 c7">
+                            meeting</span>
+                        <span class="c11 c4">
+                            : How was the ROP followed and how many</span>
+                    </p>
+                    <p class="c33">
+                        <span class="c11 c4">
+                            times did the PO have to intrude?</span>
+                    </p>
+                </td>
+                <td class="c16" colspan="1" rowspan="1">
+                    <p class="c2">
+                        <span class="c11 c18">
+                            <textarea style="width: 343px; height: 99px;" name="q3" id="q3" required></textarea>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c39">
+                <td class="c5" colspan="1" rowspan="1">
+                    <p class="c43">
+                        <span class="c11 c13">
+                            4.</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c28">
+                        <span class="c11 c4">
+                            Were all the club traditions</span>
+                    </p>
+                    <p class="c45">
+                        <span class="c11 c4">
+                            followed?</span>
+                    </p>
+                </td>
+                <td class="c16" colspan="1" rowspan="1">
+                    <p class="c2">
+                        <span class="c11 c18">
+                            <textarea style="width: 343px; height: 85px;" name="q4" id="q4" required></textarea>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c50">
+                <td class="c5" colspan="1" rowspan="1">
+                    <p class="c42 c44">
+                        <span class="c11 c13">
+                            &nbsp;5.</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c40">
+                        <span class="c11 c4">
+                            Were all the members prepared for their roles?</span>
+                    </p>
+                </td>
+                <td class="c16" colspan="1" rowspan="1">
+                    <p class="c2">
+                        <span class="c11 c18">
+                            <textarea style="width: 343px; height: 85px;" name="q5" id="q5" required></textarea>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c20">
+                <td class="c5" colspan="1" rowspan="1">
+                    <p class="c34">
+                        <span class="c11 c13">
+                            6.</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c17">
+                        <span class="c11 c4">
+                            Did the role takers satisfy their roles?</span>
+                    </p>
+                </td>
+                <td class="c16" colspan="1" rowspan="1">
+                    <p class="c2">
+                        <span class="c11 c18">
+                            <textarea style="width: 343px; height: 126px;" name="q6" id="q6" required></textarea>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+    <p class="c23">
+        <span class="c11 c19">
+        </span>
+    </p>
 </body>
+
 </html>
