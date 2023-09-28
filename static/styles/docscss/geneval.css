@@ -457,7 +457,7 @@ table{
     table-layout: fixed;
 }
 
-input{
+input[type=text],input[type=number],input[type=date]{
     height:32px;
     width: 468px;
 }
