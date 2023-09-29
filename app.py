@@ -23,5 +23,10 @@ def general_evaluator():
     return templating.render_template("general_evaluator.html")
 
 
+@app.route('/ahcounter', methods=['GET', 'POST'])
+def ahcounter():
+    return templating.render_template("ahcounter.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
