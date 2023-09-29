@@ -4,7 +4,7 @@
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 </head>
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/docscss/geneval.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/evaluator.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
 
 <body class="c0 doc-content">
     <p class="c37">
@@ -23,7 +23,7 @@
     </a>
     <a id="t.0">
     </a>
-    <form id="data">
+    <form id="input">
         <table class="c48">
             <tr class="c31">
                 <td class="c8" colspan="1" rowspan="1">
@@ -90,7 +90,7 @@
                 <td class="c3" colspan="1" rowspan="1">
                     <p class="c23">
                         <span class="c11 c18">
-                            <input type="number" name="number" id="number" required min="0">
+                            <input type="number" name="meeting-no" id="meeting-no" required min="0">
                         </span>
                     </p>
                 </td>
@@ -310,6 +310,10 @@
         <span class="c11 c19">
         </span>
     </p>
+    <script src="{{ url_for('static',filename='js/save.js') }}"></script>
+    <script>
+        saveProg(['name', 'grade', 'section','date', 'meeting-no', 'q1', 'q2', 'q3', 'q4', 'q5', 'q6']);
+    </script> 
 </body>
 
 </html>

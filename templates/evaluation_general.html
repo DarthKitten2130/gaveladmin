@@ -3,7 +3,7 @@
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/docscss/evalgen.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/evaluator.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
 </head>
 
 <body class="c39 doc-content">
@@ -36,10 +36,10 @@
                 It</span>
         </p>
     </div>
-    <form id="data" method="post">
+    <form id="input" method="post">
         <p class="c47">
             <span class="c20">
-                Title: <input type="text" size="50" name="title" id="title"></span>
+                Title: <input type="text" size="50" name="title" id="title" required></span>
         </p>
         <p class="c22">
             <span class="c20">
@@ -48,9 +48,9 @@
                     <option value="anuroop">Anuroop</option>
                 </select>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                Date: <input type="date" name="date" id="date"></span>
+                Date: <input type="date" name="date" id="date" required></span>
+                Meeting No. <input type="number" name="meeting-no" id="meeting-no" required min="0">
         </p>
-    </form>
     <div>
         <p class="c37">
             <span class="c10">
@@ -457,21 +457,21 @@
             <td class="c6" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q1" id="q11" value="excellent">
+                        <input type="radio" name="q1" id="q1" value="excellent">
                     </span>
                 </p>
             </td>
             <td class="c15" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q1" id="q12" value="satisfactory">
+                        <input type="radio" name="q1" id="q1" value="satisfactory">
                     </span>
                 </p>
             </td>
             <td class="c13" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q1" id="q13" value="could improve">
+                        <input type="radio" name="q1" id="q1" value="could improve">
                     </span>
                 </p>
             </td>
@@ -497,21 +497,21 @@
             <td class="c6" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q2" id="q21" value="excellent">
+                        <input type="radio" name="q2" id="q2" value="excellent">
                     </span>
                 </p>
             </td>
             <td class="c15" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q2" id="q22" value="satisfactory">
+                        <input type="radio" name="q2" id="q2" value="satisfactory">
                     </span>
                 </p>
             </td>
             <td class="c13" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q2" id="q23" value="could improve">
+                        <input type="radio" name="q2" id="q2" value="could improve">
                     </span>
                 </p>
             </td>
@@ -536,21 +536,21 @@
             <td class="c6" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q3" id="q31" value="excellent">
+                        <input type="radio" name="q3" id="q3" value="excellent">
                     </span>
                 </p>
             </td>
             <td class="c15" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q3" id="q32" value="satisfactory">
+                        <input type="radio" name="q3" id="q3" value="satisfactory">
                     </span>
                 </p>
             </td>
             <td class="c13" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q3" id="q33" value="could improve">
+                        <input type="radio" name="q3" id="q3" value="could improve">
                     </span>
                 </p>
             </td>
@@ -575,21 +575,21 @@
             <td class="c6" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q4" id="q41" value="excellent">
+                        <input type="radio" name="q4" id="q4" value="excellent">
                     </span>
                 </p>
             </td>
             <td class="c15" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q4" id="q42" value="satisfactory">
+                        <input type="radio" name="q4" id="q4" value="satisfactory">
                     </span>
                 </p>
             </td>
             <td class="c13" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q4" id="q43" value="could improve">
+                        <input type="radio" name="q4" id="q4" value="could improve">
                     </span>
                 </p>
             </td>
@@ -615,21 +615,21 @@
             <td class="c6" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q5" id="q51" value="excellent">
+                        <input type="radio" name="q5" id="q5" value="excellent">
                     </span>
                 </p>
             </td>
             <td class="c15" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q5" id="q52" value="satisfactory">
+                        <input type="radio" name="q5" id="q5" value="satisfactory">
                     </span>
                 </p>
             </td>
             <td class="c13" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q5" id="q53" value="could improve">
+                        <input type="radio" name="q5" id="q5" value="could improve">
                     </span>
                 </p>
             </td>
@@ -655,21 +655,21 @@
             <td class="c6" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q6" id="q61" value="excellent">
+                        <input type="radio" name="q6" id="q6" value="excellent">
                     </span>
                 </p>
             </td>
             <td class="c15" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q6" id="q62" value="satisfactory">
+                        <input type="radio" name="q6" id="q6" value="satisfactory">
                     </span>
                 </p>
             </td>
             <td class="c13" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q6" id="q63" value="could improve">
+                        <input type="radio" name="q6" id="q6" value="could improve">
                     </span>
                 </p>
             </td>
@@ -695,21 +695,21 @@
             <td class="c6" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q7" id="q71" value="excellent">
+                        <input type="radio" name="q7" id="q7" value="excellent">
                     </span>
                 </p>
             </td>
             <td class="c15" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q7" id="q72" value="satisfactory">
+                        <input type="radio" name="q7" id="q7" value="satisfactory">
                     </span>
                 </p>
             </td>
             <td class="c13" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q7" id="q73" value="could improve">
+                        <input type="radio" name="q7" id="q7" value="could improve">
                     </span>
                 </p>
             </td>
@@ -735,21 +735,21 @@
             <td class="c6" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q8" id="q81" value="excellent">
+                        <input type="radio" name="q8" id="q8" value="excellent">
                     </span>
                 </p>
             </td>
             <td class="c15" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q8" id="q82" value="satisfactory">
+                        <input type="radio" name="q8" id="q8" value="satisfactory">
                     </span>
                 </p>
             </td>
             <td class="c13" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q8" id="q83" value="could improve">
+                        <input type="radio" name="q8" id="q8" value="could improve">
                     </span>
                 </p>
             </td>
@@ -775,21 +775,21 @@
             <td class="c6" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q9" id="q91" value="excellent">
+                        <input type="radio" name="q9" id="q9" value="excellent">
                     </span>
                 </p>
             </td>
             <td class="c15" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q9" id="q92" value="satisfactory">
+                        <input type="radio" name="q9" id="q9" value="satisfactory">
                     </span>
                 </p>
             </td>
             <td class="c13" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q9" id="q93" value="could improve">
+                        <input type="radio" name="q9" id="q9" value="could improve">
                     </span>
                 </p>
             </td>
@@ -815,21 +815,21 @@
             <td class="c6" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q10" id="q101" value="excellent">
+                        <input type="radio" name="q10" id="q10" value="excellent">
                     </span>
                 </p>
             </td>
             <td class="c15" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q10" id="q102" value="satisfactory">
+                        <input type="radio" name="q10" id="q10" value="satisfactory">
                     </span>
                 </p>
             </td>
             <td class="c13" colspan="1" rowspan="1">
                 <p class="c0">
                     <span class="c5 c2">
-                        <input type="radio" name="q10" id="q103" value="could improve">
+                        <input type="radio" name="q10" id="q10" value="could improve">
                     </span>
                 </p>
             </td>
@@ -840,7 +840,6 @@
         </span>
     </p>
     <p class="c36">
-    <form id='qs'>
         <span class="c17">
             What could the speaker have done differently to make the speech more effective?</span>
         </p>
@@ -856,6 +855,10 @@
             <input type="submit" value="submit">
     </form>
     </p>
+    <script src="{{ url_for('static',filename='js/save.js') }}"></script>
+    <script>
+        saveProg(['title', 'evaluator','date', 'meeting-no', 'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8','q9','q10','q11']);
+    </script>
 </body>
 
 </html>
