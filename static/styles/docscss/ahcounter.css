@@ -20,7 +20,7 @@ table th {
     border-top-style: solid;
     border-left-style: solid;
     border-bottom-width: 1pt;
-    width: 205.6pt;
+    width: 150.6pt;
     border-top-color: #000000;
     border-bottom-style: solid
 }
@@ -708,4 +708,15 @@ h6 {
     orphans: 2;
     widows: 2;
     text-align: left
+}
+
+input[type="text"] {
+    width: 196px;
+    height: 41px;
+    border: 0px;
+}
+
+input[type="number"] {
+    height: 41px;
+    border: 0px;
 }
