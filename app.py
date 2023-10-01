@@ -28,5 +28,11 @@ def ahcounter():
     return templating.render_template("ahcounter.html")
 
 
+@app.route('/timer', methods=['GET', 'POST'])
+def timer():
+    return templating.render_template("timer.html")
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
