@@ -713,10 +713,8 @@ h6 {
 input[type="text"] {
     width: 196px;
     height: 41px;
-    border: 0px;
 }
 
 input[type="number"] {
     height: 41px;
-    border: 0px;
 }
