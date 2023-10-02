@@ -32,7 +32,7 @@
                 </td>
                 <td class="c2" colspan="1" rowspan="1">
                     <p class="c26"><span class="c0">
-                            <select name="grade" id="grade" required style="width: 249px;min-height: 25px;">
+                            <select name="class" id="class" required style="width: 249px;min-height: 25px;">
                                 <option value="9">9</option>
                                 <option value="10">10</option>
                                 <option value="11">11</option>
@@ -337,6 +337,13 @@
         <p class="c34"><span class="c32"></span></p>
         <input type="submit" value="submit">
     </form>
+    <script src="{{ url_for('static',filename='js/save.js') }}"></script>
+    <script>
+        saveProg(['name', 'class','section', 'meeting-no','date',
+        'q11','q12','q13','q14','q15','q16','q17','q18','q19','q110','q111','q112','q113','q114',
+        'q21','q22','q23','q24','q25','q26','q27','q28','q29','q210','q211','q212','q213','q214',
+        'q31','q32','q33','q34','q35','q36','q37','q38','q39','q310','q311','q312','q313','q314']);
+    </script>
 </body>
 
 </html>
