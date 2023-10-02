@@ -1,7 +1,8 @@
-from flask import Flask, templating, redirect, request, session 
+from flask import Flask, templating, redirect, request, session
 
 app = Flask(__name__)
-app.secret_key= 'root'
+app.secret_key = 'root'
+
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
@@ -30,8 +31,8 @@ def ahcounter():
 
 @app.route('/timer', methods=['GET', 'POST'])
 def timer():
-    return templating.render_template("timer.html")
 
+    return templating.render_template("timer.html")
 
 
 if __name__ == "__main__":
