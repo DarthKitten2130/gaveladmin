@@ -19,3 +19,7 @@ input[type=radio] {
     margin: auto;
 
 }
+
+input{
+    border: 0px;
+}
