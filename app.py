@@ -31,7 +31,6 @@ def ahcounter():
 
 @app.route('/timer', methods=['GET', 'POST'])
 def timer():
-
     return templating.render_template("timer.html")
 
 

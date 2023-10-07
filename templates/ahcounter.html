@@ -4,6 +4,13 @@
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/docscss/ahcounter.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
+    <style>
+        select {
+            width: 196px;
+            height: 40px;
+            border: 0px;
+        }
+    </style>
 </head>
 
 <body class="c41 doc-content">
@@ -32,12 +39,12 @@
                 </td>
                 <td class="c2" colspan="1" rowspan="1">
                     <p class="c26"><span class="c0">
-                            <select name="class" id="class" required style="width: 249px;min-height: 25px;">
+                            <select name="class" id="class" required style="width: 249px;height: 25px;border: 2px solid black;">
                                 <option value="9">9</option>
                                 <option value="10">10</option>
                                 <option value="11">11</option>
                                 <option value="12">12</option>
-                            </select><select name="section" id="section" required style="width: 249px;height: 25px;">
+                            </select><select name="section" id="section" required style="width: 249px;height: 25px;border: 1px solid black;">
                                 <option value="a">A</option>
                                 <option value="b">B</option>
                                 <option value="c">C</option>
@@ -67,7 +74,7 @@
                 </td>
                 <td class="c2" colspan="1" rowspan="1">
                     <p class="c26"><span class="c0">
-                            <input type="number" name="meeting-no" id="meeting-no" style="width: 498px;height: 26px;"
+                            <input type="number" name="meeting-no" id="meeting-no" style="width: 498px;height: 25px;"
                                 required>
                         </span></p>
                 </td>
@@ -82,6 +89,7 @@
                         </span></p>
                 </td>
             </tr>
+
         </table>
         <p class="c3"><span class="c52">Role of the Ah Counter: </span></p>
         <p class="c30"><span class="c21">The purpose of the &ldquo;ah&rdquo; counter is to make a note of the words and
@@ -106,6 +114,7 @@
         <p class="c23"><span class="c17"></span></p><a id="t.a8e7144700357ccbe2b1051a1e15b985394a3c54"></a><a
             id="t.1"></a>
         <table class="c57">
+            <style></style>
             <tr class="c58">
                 <td class="c1" colspan="1" rowspan="1">
                     <p class="c31"><span class="c7">Sequence</span></p>
@@ -129,7 +138,7 @@
                     <p class="c18"><span class="c17">Speaker 1</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q11" id="q11" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q11" id="q11"></select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0"><input type="number" name="q21" id="q21" min="0" required></span></p>
@@ -144,7 +153,11 @@
                     <p class="c18"><span class="c17">Speaker 2</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q12" id="q12" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q12" id="q12" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0">
@@ -161,7 +174,11 @@
                     <p class="c18"><span class="c17">Speaker 3</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q13" id="q13" required></span></p>
+                    <p class="c5"><span class="c0"> <select name="q13" id="q13" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0">
@@ -177,7 +194,11 @@
                     <p class="c36"><span class="c17">Evaluator 1</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q14" id="q14" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q14" id="q14" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0"><input type="number" name="q24" id="q24" min="0" required></span></p>
@@ -191,7 +212,11 @@
                     <p class="c36"><span class="c17">Evaluator 2</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q15" id="q15" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q15" id="q15" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0"><input type="number" name="q25" id="q25" min="0" required></span></p>
@@ -205,7 +230,11 @@
                     <p class="c46"><span class="c17">Evaluator 3</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q16" id="q16" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q16" id="q16" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0"><input type="number" name="q26" id="q26" min="0" required></span></p>
@@ -219,7 +248,11 @@
                     <p class="c46"><span class="c17">Table Topic Toastmaster</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q17" id="q17" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q17" id="q17" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0"><input type="number" name="q27" id="q27" min="0" required></span></p>
@@ -233,7 +266,11 @@
                     <p class="c16"><span class="c17">Table Topic Speaker 1</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q18" id="q18" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q18" id="q18" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0"><input type="number" name="q28" id="q28" min="0" required></span></p>
@@ -247,7 +284,12 @@
                     <p class="c16"><span class="c17">Table Topic Speaker 2</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q19" id="q19" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q19" id="q19" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0"><input type="number" name="q29" id="q29" min="0" required></span></p>
@@ -261,10 +303,14 @@
                     <p class="c16"><span class="c17">Table Topic Speaker 3</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q110" id="q110" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q110" id="q110" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="number" name="q210" id="q210" min="0" required></span></p>
+                    <p class="c5"><span class="c0"><input type="number" name="q210" id="q210" min="0" required></span>
+                    </p>
                 </td>
                 <td class="c14" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0"><input type="text" name="q310" id="q310" required></span></p>
@@ -275,10 +321,15 @@
                     <p class="c16"><span class="c17">Table Topics Speaker 4</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q111" id="q111" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q111" id="q111" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="number" name="q211" id="q211" min="0" required></span></p>
+                    <p class="c5"><span class="c0"><input type="number" name="q211" id="q211" min="0" required></span>
+                    </p>
                 </td>
                 <td class="c14" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0"><input type="text" name="q311" id="q311" required></span></p>
@@ -289,10 +340,15 @@
                     <p class="c16"><span class="c17">Table Topics Speaker 5</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q112" id="q112" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q112" id="q112" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="number" name="q212" id="q212" min="0" required></span></p>
+                    <p class="c5"><span class="c0"><input type="number" name="q212" id="q212" min="0" required></span>
+                    </p>
                 </td>
                 <td class="c14" colspan="1" rowspan="1">
                     <p class="c5"><span class="c0"><input type="text" name="q312" id="q312" required></span></p>
@@ -303,16 +359,19 @@
                     <p class="c11"><span class="c17">Toastmaster(TM)</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q113" id="q113"
-                                style="height: 35px;" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q113" id="q113" style="height: 35px;" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
                     <p class="c13"><span class="c0"><input type="number" name="q213" id="q213" min="0"
                                 style="height: 35px;" required></span></p>
                 </td>
                 <td class="c14" colspan="1" rowspan="1">
-                    <p class="c13"><span class="c0"><input type="text" name="q313" id="q313"
-                                style="height: 35px;" required></span></p>
+                    <p class="c13"><span class="c0"><input type="text" name="q313" id="q313" style="height: 35px;"
+                                required></span></p>
                 </td>
             </tr>
             <tr class="c19">
@@ -320,16 +379,19 @@
                     <p class="c11"><span class="c17">General Evaluator</span></p>
                 </td>
                 <td class="c29" colspan="1" rowspan="1">
-                    <p class="c5"><span class="c0"><input type="text" name="q114" id="q114"
-                                style="height: 30px;" required></span></p>
+                    <p class="c5"><span class="c0"><select name="q114" id="q114" style="height: 30px;" required>
+                                <option value="0">Option 0</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select></span></p>
                 </td>
                 <td class="c6" colspan="1" rowspan="1">
                     <p class="c13"><span class="c0"><input type="number" name="q214" id="q214" min="0"
                                 style="height: 30px;" required></span></p>
                 </td>
                 <td class="c14" colspan="1" rowspan="1">
-                    <p class="c13"><span class="c0"><input type="text" name="q314" id="q314"
-                                style="height: 30px;" required></span></p>
+                    <p class="c13"><span class="c0"><input type="text" name="q314" id="q314" style="height: 30px;"
+                                required></span></p>
                 </td>
             </tr>
         </table>
@@ -339,10 +401,10 @@
     </form>
     <script src="{{ url_for('static',filename='js/save.js') }}"></script>
     <script>
-        saveProg(['name', 'class','section', 'meeting-no','date',
-        'q11','q12','q13','q14','q15','q16','q17','q18','q19','q110','q111','q112','q113','q114',
-        'q21','q22','q23','q24','q25','q26','q27','q28','q29','q210','q211','q212','q213','q214',
-        'q31','q32','q33','q34','q35','q36','q37','q38','q39','q310','q311','q312','q313','q314']);
+        saveProg(['name', 'class', 'section', 'meeting-no', 'date',
+            'q11', 'q12', 'q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q110', 'q111', 'q112', 'q113', 'q114',
+            'q21', 'q22', 'q23', 'q24', 'q25', 'q26', 'q27', 'q28', 'q29', 'q210', 'q211', 'q212', 'q213', 'q214',
+            'q31', 'q32', 'q33', 'q34', 'q35', 'q36', 'q37', 'q38', 'q39', 'q310', 'q311', 'q312', 'q313', 'q314']);
     </script>
 </body>
 
