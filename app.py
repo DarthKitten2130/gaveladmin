@@ -31,7 +31,7 @@ def ahcounter():
 
 @app.route('/timer', methods=['GET', 'POST'])
 def timer():
-    return templating.render_template("timer.html")
+    return templating.render_template("timer1.html")
 
 
 if __name__ == "__main__":
