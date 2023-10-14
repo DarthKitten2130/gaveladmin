@@ -8,387 +8,399 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/docscss/timer1.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
 </head>
+<form id="input" style="text-align: center; margin: auto;">
 
-<body>
-    <h1><u><b>Timer Sheet</b></u></h1>
+    <body>
 
-    <table>
-        <thead>
-            <th>SECTION</th>
-            <th>NAME</th>
-            <th>ALLOTED TIME</th>
-            <th>TIME TAKEN (SECONDS)</th>
-            <th>QUALIFIED?</th>
-        </thead>
-        <thead>
-            <th colspan="5">ROLETAKERS</th>
-        </thead>
-        <tr>
-            <td>
-                TMOD
-            </td>
-            <td>
-                <select name="n1" id="n1" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                5-8 mins (Total)
-            </td>
-            <td>
-                <input type="number" name="t1" id="t1" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q1" id="q1">
-            </td>
-        </tr>
+        <h1><u><b>Timer Sheet</b></u></h1>
 
-        <tr>
-            <td>
-                GE
-            </td>
-            <td>
-                <select name="n2" id="n2" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                4-6 mins (For Themselves)
-            </td>
-            <td>
-                <input type="number" name="t2" id="t2" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q2" id="q2">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                TTM
-            </td>
-            <td>
-                <select name="n3" id="n3">
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                10-12 mins (For 5 Topics)
-            </td>
-            <td>
-                <input type="number" name="t3" id="t3" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q3" id="q3">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                TIMER
-            </td>
-            <td>
-                <select name="n4" id="n4" required>
-                    <option value="118105">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                2-3 mins
-            </td>
-            <td>
-                <input type="number" name="t4" id="t4" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q4" id="q4">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                AH-COUNTER
-            </td>
-            <td>
-                <select name="n5" id="n5">
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                1-2 mins
-            </td>
-            <td>
-                <input type="number" name="t5" id="t5">
-            </td>
-            <td>
-                <input type="checkbox" name="q5" id="q5">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                WMG
-            </td>
-            <td>
-                <select name="n6" id="n6" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                2-3 mins
-            </td>
-            <td>
-                <input type="number" name="t6" id="t6" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q6" id="q6">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                LISTENER
-            </td>
-            <td>
-                <select name="n7" id="n7" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                3-5 mins
-            </td>
-            <td>
-                <input type="number" name="t7" id="t7" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q7" id="q7">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="5"> </td>
-        </tr>
-        <thead>
-            <th colspan="5">ROLETAKERS</th>
-        </thead>
-        <tr>
-            <td>
-                SPEAKER 1 (CC# <input type="number" name="s1" id="s1" min="1" max="4" required>)
-            </td>
-            <td>
-                <select name="n8" id="n8" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td rowspan="3">
-                CC#1 = 4-5 Mins<br>CC#2 = 5-7 mins<br>CC#3 = 7-8 mins<br>CC#4 = 8-10 mins
-            </td>
-            <td>
-                <input type="number" name="t8" id="t8" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q8" id="q8">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                SPEAKER 2 (CC# <input type="number" name="s2" id="s2" min="1" required>)
-            </td>
-            <td>
-                <select name="n9" id="n9" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                <input type="number" name="t9" id="t9" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q9" id="q9">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                SPEAKER 3 (CC# <input type="number" name="s3" id="s3" min="1" max="4" required>)
-            </td>
-            <td>
-                <select name="n10" id="n10" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                <input type="number" name="t10" id="t10" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q10" id="q10">
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <thead>
-            <th colspan="5">TABLE TOPICS</th>
-        </thead>
-        <tr>
-            <td>SPEAKER 1</td>
-            <td>
-                <select name="n11" id="n11" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td rowspan="5">
-                1-2 Mins
-            </td>
-            <td>
-                <input type="number" name="t11" id="t11" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q11" id="q11">
-            </td>
-        </tr>
-        <tr>
-            <td>SPEAKER 2</td>
-            <td>
-                <select name="n12" id="n12" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                <input type="number" name="t12" id="t12" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q12" id="q12">
-            </td>
-        </tr>
-        <tr>
-            <td>SPEAKER 3</td>
-            <td>
-                <select name="n13" id="n13" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                <input type="number" name="t13" id="t13" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q13" id="q13">
-            </td>
-        </tr>
-        <tr>
-            <td>SPEAKER 4</td>
-            <td>
-                <select name="n14" id="n14" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                <input type="number" name="t14" id="t14" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q14" id="q14">
-            </td>
-        </tr>
-        <tr>
-            <td>SPEAKER 5</td>
-            <td>
-                <select name="n15" id="n15" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                <input type="number" name="t15" id="t15" min="1" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q15" id="q15">
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <thead>
-            <th colspan="5">EVALUATORS</th>
-        </thead>
-        <tr>
-            <td>EVALUATION 1</td>
-            <td>
-                <select name="n16" id="n16" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                <input type="number" name="e1" id="e1" min="1" required>
-            </td>
-            <td>
-                <input type="number" name="t16" id="t16" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q16" id="q16">
-            </td>
-        </tr>
-        <tr>
-            <td>EVALUATION 2</td>
-            <td>
-                <select name="n17" id="n17" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                <input type="number" name="e2" id="e2" min="1" required>
-            </td>
-            <td>
-                <input type="number" name="t17" id="t17" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q17" id="q17">
-            </td>
-        </tr>
-        <tr>
-            <td>EVALUATION 3</td>
-            <td>
-                <select name="n17" id="n17" required>
-                    <option value="1181045">Sathvik</option>
-                </select>
-            </td>
-            <td>
-                <input type="number" name="e3" id="e3" min="1" required>
-            </td>
-            <td>
-                <input type="number" name="t17" id="t17" required>
-            </td>
-            <td>
-                <input type="checkbox" name="q17" id="q17">
-            </td>
-        </tr>
-    </table>
-    <br>
-    <br>
-    <br>
-    <br>
-    <b><div style="text-align: left;">Name: <select name="name" id="name" required>
-                <option value="1181045">Sathvik</option>
-            </select></div>
+        <table>
+            <thead>
+                <th>SECTION</th>
+                <th>NAME</th>
+                <th>ALLOTED TIME</th>
+                <th>TIME TAKEN (SECONDS)</th>
+                <th>QUALIFIED?</th>
+            </thead>
+            <thead>
+                <th colspan="5">ROLETAKERS</th>
+            </thead>
+            <tr>
+                <td>
+                    TMOD
+                </td>
+                <td>
+                    <select name="n1" id="n1" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    5-8 mins (Total)
+                </td>
+                <td>
+                    <input type="number" name="t1" id="t1" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q1" id="q1">
+                </td>
+            </tr>
 
-    <div style="text-align: center;">Class/Section: <select name="name" id="name" required>
-                <option value="09">9th</option>
-                <option value="10">10th</option>
-                <option value="11">11th</option>
-                <option value="12">12th</option>
-            </select>/
-            <select name="section" id="section" required>
-                <option value="a">A</option>
-                <option value="b">B</option>
-                <option value="c">C</option>
-                <option value="d">D</option>
-                <option value="e">E</option>
-                <option value="f">F</option>
-                <option value="g">G</option>
-                <option value="h">H</option>
-                <option value="i">I</option>
-                <option value="j">J</option>
-                <option value="k">K</option>
-                <option value="l">L</option>
-                <option value="m">M</option>
-                <option value="n">N</option>
-                <option value="o">O</option>
-                <option value="p">P</option>
-                <option value="q">Q</option>
-                <option value="r">R</option>
-                <option value="s">S</option>
-            </select></div>
-    <div style="text-align: right;">
-        Date/Meeting No: <input type="date" name="date" id="date" required>/<input type="number" name="meeting-no" id="meeting-no" min="0" required>
-    </div></b>
-</body>
+            <tr>
+                <td>
+                    GE
+                </td>
+                <td>
+                    <select name="n2" id="n2" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    4-6 mins (For Themselves)
+                </td>
+                <td>
+                    <input type="number" name="t2" id="t2" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q2" id="q2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    TTM
+                </td>
+                <td>
+                    <select name="n3" id="n3">
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    10-12 mins (For 5 Topics)
+                </td>
+                <td>
+                    <input type="number" name="t3" id="t3" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q3" id="q3">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    TIMER
+                </td>
+                <td>
+                    <select name="n4" id="n4" required>
+                        <option value="118105">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    2-3 mins
+                </td>
+                <td>
+                    <input type="number" name="t4" id="t4" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q4" id="q4">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    AH-COUNTER
+                </td>
+                <td>
+                    <select name="n5" id="n5">
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    1-2 mins
+                </td>
+                <td>
+                    <input type="number" name="t5" id="t5">
+                </td>
+                <td>
+                    <input type="checkbox" name="q5" id="q5">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    WMG
+                </td>
+                <td>
+                    <select name="n6" id="n6" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    2-3 mins
+                </td>
+                <td>
+                    <input type="number" name="t6" id="t6" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q6" id="q6">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    LISTENER
+                </td>
+                <td>
+                    <select name="n7" id="n7" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    3-5 mins
+                </td>
+                <td>
+                    <input type="number" name="t7" id="t7" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q7" id="q7">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5"> </td>
+            </tr>
+            <thead>
+                <th colspan="5">PREPARED SPEECHES</th>
+            </thead>
+            <tr>
+                <td>
+                    SPEAKER 1 (CC# <input type="number" name="s1" id="s1" min="1" max="4" style="width: 30px;border: 1px solid black;"
+                        required> )
+                </td>
+                <td>
+                    <select name="n8" id="n8" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td rowspan="3">
+                    CC#1 = 4-5 Mins<br>CC#2 = 5-7 mins<br>CC#3 = 7-8 mins<br>CC#4 = 8-10 mins
+                </td>
+                <td>
+                    <input type="number" name="t8" id="t8" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q8" id="q8">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SPEAKER 2 (CC# <input type="number" name="s2" id="s2" min="1" style="width: 30px;border: 1px solid black;" required> )
+                </td>
+                <td>
+                    <select name="n9" id="n9" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" name="t9" id="t9" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q9" id="q9">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SPEAKER 3 (CC# <input type="number" name="s3" id="s3" min="1" max="4" style="width: 30px;border: 1px solid black;"
+                        required> )
+                </td>
+                <td>
+                    <select name="n10" id="n10" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" name="t10" id="t10" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q10" id="q10">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <thead>
+                <th colspan="5">TABLE TOPICS</th>
+            </thead>
+            <tr>
+                <td>SPEAKER 1</td>
+                <td>
+                    <select name="n11" id="n11" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td rowspan="5">
+                    1-2 Mins
+                </td>
+                <td>
+                    <input type="number" name="t11" id="t11" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q11" id="q11">
+                </td>
+            </tr>
+            <tr>
+                <td>SPEAKER 2</td>
+                <td>
+                    <select name="n12" id="n12" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" name="t12" id="t12" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q12" id="q12">
+                </td>
+            </tr>
+            <tr>
+                <td>SPEAKER 3</td>
+                <td>
+                    <select name="n13" id="n13" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" name="t13" id="t13" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q13" id="q13">
+                </td>
+            </tr>
+            <tr>
+                <td>SPEAKER 4</td>
+                <td>
+                    <select name="n14" id="n14" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" name="t14" id="t14" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q14" id="q14">
+                </td>
+            </tr>
+            <tr>
+                <td>SPEAKER 5</td>
+                <td>
+                    <select name="n15" id="n15" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" name="t15" id="t15" min="1" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q15" id="q15">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <thead>
+                <th colspan="5">EVALUATORS</th>
+            </thead>
+            <tr>
+                <td>EVALUATION 1</td>
+                <td>
+                    <select name="n16" id="n16" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" name="e1" id="e1" min="1" required>
+                </td>
+                <td>
+                    <input type="number" name="t16" id="t16" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q16" id="q16">
+                </td>
+            </tr>
+            <tr>
+                <td>EVALUATION 2</td>
+                <td>
+                    <select name="n17" id="n17" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" name="e2" id="e2" min="1" required>
+                </td>
+                <td>
+                    <input type="number" name="t17" id="t17" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q17" id="q17">
+                </td>
+            </tr>
+            <tr>
+                <td>EVALUATION 3</td>
+                <td>
+                    <select name="n17" id="n17" required>
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" name="e3" id="e3" min="1" required>
+                </td>
+                <td>
+                    <input type="number" name="t17" id="t17" required>
+                </td>
+                <td>
+                    <input type="checkbox" name="q17" id="q17">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <b>
+            <h3>
+                <div style="text-align: center;">
+                    Name: <select name="name" id="name" required>
+                        <option value="1181045">Sathvik</option>
+                    </select> <br> <br>
+                    Class/Section: <select name="name" id="name" required>
+                        <option value="09">9th</option>
+                        <option value="10">10th</option>
+                        <option value="11">11th</option>
+                        <option value="12">12th</option>
+                    </select> /
+                    <select name="section" id="section" required>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                        <option value="e">E</option>
+                        <option value="f">F</option>
+                        <option value="g">G</option>
+                        <option value="h">H</option>
+                        <option value="i">I</option>
+                        <option value="j">J</option>
+                        <option value="k">K</option>
+                        <option value="l">L</option>
+                        <option value="m">M</option>
+                        <option value="n">N</option>
+                        <option value="o">O</option>
+                        <option value="p">P</option>
+                        <option value="q">Q</option>
+                        <option value="r">R</option>
+                        <option value="s">S</option>
+                    </select> <br> <br>
+                    Date/Meeting No: <input type="date" name="date" id="date" style="border: 1px solid black" required>
+                    /
+                    <input type="number" name="meeting-no" id="meeting-no" min="0"
+                        style="width: 30px;border: 1px solid black;" required>
+                </div>
+            </h3>
+        </b> <br>
+        <input type="submit" value="submit" style="width: 50px;height: 30px;">
+    </body>
+</form>
 
 </html>

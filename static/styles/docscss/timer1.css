@@ -9,4 +9,5 @@ h1 {
 table,thead,tr,th,td {
     border: 1px solid black;
     border-collapse: collapse;
+    padding: 7px;
 }
