@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/docscss/oc1.css') }}">
+    <title>OC Sheet</title>
+</head>
+<body>
+    <h1><b><u>OC Sheet</u></b></h1>
+    <form name="input" id="input">
+        <b>MEETING # <input type="number" name="meeting-no" id="meeting-no" min="0" style="width: 30px" required> <br>
+        <br>
+        Filled By: <select name="oc" id="oc" required>
+            <option value="1181045">Sathvik</option>
+        </select>
+        <br>
+        <br>
+        Date: <input type="date" name="date" id="date" required> <br>
+        <br>
+        <div style="text-align: right;">
+            Start Time: <input type="time" name="stime" id="stime" required><br><br>
+            End Time: <input type="time" name="etime" id="etime" required>
+        </div>
+        Theme: <input type="text" name="theme" id="theme" required><br><br>
+        Word of the Day: <input type="text" name="wotd" id="wotd" required><br><br>    
+        Meaning: <input type="text" name="meaning" id="meaning"> <br><br><br>
+
+        <h3>Role Takers</h3>
+    </b>
+    </form>
+</body>
+</html>

@@ -39,5 +39,10 @@ def wmg():
     return templating.render_template("wmg1.html")
 
 
+@app.route('/oc', methods=['GET', 'POST'])
+def oc():
+    return templating.render_template("oc1.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
