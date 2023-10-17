@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMG</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/docscss/wmg1.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
+</head>
+
+<body>
+    <h1><b><u>Grammarian Report</u></b></h1>
+    <form name="input" id="input">
+        <table>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <td>
+                    <select name="name" id="name">
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Class/Section
+                </th>
+                <td>
+                    <select name="class" id="class" required>
+                        <option value="09">9th</option>
+                        <option value="10">10th</option>
+                        <option value="11">11th</option>
+                        <option value="12">12th</option>
+                    </select> /
+                    <select name="section" id="section" required>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                        <option value="e">E</option>
+                        <option value="f">F</option>
+                        <option value="g">G</option>
+                        <option value="h">H</option>
+                        <option value="i">I</option>
+                        <option value="j">J</option>
+                        <option value="k">K</option>
+                        <option value="l">L</option>
+                        <option value="m">M</option>
+                        <option value="n">N</option>
+                        <option value="o">O</option>
+                        <option value="p">P</option>
+                        <option value="q">Q</option>
+                        <option value="r">R</option>
+                        <option value="s">S</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Meeting No.
+                </th>
+                <td>
+                    <input type="number" name="meeting-no" id="meeting-no">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Date
+                </th>
+                <td>
+                    <input type="date" name="date" id="date">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <b>Directions:</b> Introduce the "Word of the Day", ask members to use it throughout the meeting, and make note
+        of the number of times each person uses it by
+        placing tally marks in the space provided next to their role. Also, write down any grammatical errors you hear
+        and creative uses of the English Language.
+        Report your findings at the end of the meeting.
+        <br>
+        <br>
+        <b>Word of the Day: <input type="text" name="wotd" id="wotd" style="border: 1px solid black"> <br><br>
+
+            <b>Type of Word:
+
+            <input type="radio" name="type" id="noun"><label for="noun">Noun</label>
+            <input type="radio" name="type" id="verb"><label for="verb">Verb</label>
+            <input type="radio" name="type" id="adjective"><label for="adjective">Adjective</label>
+            <input type="radio" name="type" id="adverb"><label for="adverb">Adverb</label>
+
+            <br>
+
+            Definition:</b> <textarea name="" id="" cols="30" rows="1"></textarea>
+
+            <table>
+
+            </table>
+    </form>
+</body>
+
+</html>

@@ -34,5 +34,10 @@ def timer():
     return templating.render_template("timer1.html")
 
 
+@app.route('/wmg', methods=['GET', 'POST'])
+def wmg():
+    return templating.render_template("wmg1.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
