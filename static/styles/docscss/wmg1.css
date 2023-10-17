@@ -13,8 +13,16 @@ table {
     margin: auto;
 }
 
-table,thead,tr,th,td {
+table,
+thead,
+tr,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
-    padding: 7px;
+    padding: 7px
+}
+
+input[type=text] {
+    width: 100%;
 }

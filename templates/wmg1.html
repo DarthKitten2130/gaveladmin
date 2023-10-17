@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WMG</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/docscss/wmg1.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/docscss/wmg1.css') }}">
 </head>
 
 <body>
@@ -62,7 +62,7 @@
                     Meeting No.
                 </th>
                 <td>
-                    <input type="number" name="meeting-no" id="meeting-no">
+                    <input type="number" name="meeting-no" id="meeting-no" required>
                 </td>
             </tr>
             <tr>
@@ -70,7 +70,7 @@
                     Date
                 </th>
                 <td>
-                    <input type="date" name="date" id="date">
+                    <input type="date" name="date" id="date" required>
                 </td>
             </tr>
         </table>
@@ -82,23 +82,340 @@
         Report your findings at the end of the meeting.
         <br>
         <br>
-        <b>Word of the Day: <input type="text" name="wotd" id="wotd" style="border: 1px solid black"> <br><br>
+        <b>Word of the Day: <input type="text" name="wotd" id="wotd" style="border: 1px solid black;width:100px"> <br><br>
 
-            <b>Type of Word:
+            <b><h3>Type of Word:</h3>
 
-            <input type="radio" name="type" id="noun"><label for="noun">Noun</label>
-            <input type="radio" name="type" id="verb"><label for="verb">Verb</label>
-            <input type="radio" name="type" id="adjective"><label for="adjective">Adjective</label>
-            <input type="radio" name="type" id="adverb"><label for="adverb">Adverb</label>
+                <input type="radio" name="type" id="type" value="noun"><label for="noun">Noun</label>
+                <input type="radio" name="type" id="type" value="verb"><label for="verb">Verb</label>
+                <input type="radio" name="type" id="type" value="adjective"><label for="adjective">Adjective</label>
+                <input type="radio" name="type" id="type" value="adverb"><label for="adverb">Adverb</label>
 
+                <br><br><br>
+
+                Definition: <br><textarea name="definition" id="definition" cols="60" rows="1"></textarea>
+                <br>
+                <br>
+                Word used in a sentence: <br><textarea name="wuias" id="wuias" cols="60" rows="1"></textarea>
+            </b>
             <br>
-
-            Definition:</b> <textarea name="" id="" cols="30" rows="1"></textarea>
-
+            <br>
             <table>
-
-            </table>
+                <thead>
+                    <th>
+                    </th>
+                    <th>
+                        Word of the Day
+                    </th>
+                    <th>
+                        Creative Phrases or Uses of the English Language
+                    </th>
+                    <th>
+                        Grammatical Errors
+                    </th>
+                </thead>
+                <tr>
+                    <td>
+                        <h5>Example:</h5>
+                        Jovie Zoe
+                    </td>
+                    <td>
+                        <img src="{{ url_for('static',filename='images/tally.jpg') }}" alt="Sorry, this image is unavailable">
+                    </td>
+                    <td>
+                        <h4><i>She glided effortlessly through the room</i></h4>
+                    </td>
+                    <td>
+                        <h4><i>I didn't bring no pencils...</i></h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Presiding Officer <br><select name="n1" id="n1">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w1" id="w1" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c1" id="c1">
+                    </td>
+                    <td>
+                        <input type="text" name="g1" id="g1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Toastmaster <br><select name="n2" id="n2">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w2" id="w2" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c2" id="c2">
+                    </td>
+                    <td>
+                        <input type="text" name="g2" id="g2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Speaker #1 <br><select name="n3" id="n3">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w3" id="w3" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c3" id="c3">
+                    </td>
+                    <td>
+                        <input type="text" name="g3" id="g3">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Speaker #2 <br><select name="n4" id="n4">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w4" id="w4" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c4" id="c4">
+                    </td>
+                    <td>
+                        <input type="text" name="g4" id="g4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Speaker #3 <br><select name="n5" id="n5">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w5" id="w5" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c5" id="c5">
+                    </td>
+                    <td>
+                        <input type="text" name="g5" id="g5">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Evaluator #1 <br><select name="n6" id="n6">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w6" id="w6" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c6" id="c6">
+                    </td>
+                    <td>
+                        <input type="text" name="g6" id="g6">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Evaluator #2 <br><select name="n7" id="n7">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w7" id="w7" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c7" id="c7">
+                    </td>
+                    <td>
+                        <input type="text" name="g7" id="g7">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Evaluator #3 <br><select name="n8" id="n8">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w8" id="w8" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c8" id="c8">
+                    </td>
+                    <td>
+                        <input type="text" name="g8" id="g8">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Table Topics Master <br><select name="n9" id="n9">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w9" id="w9" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c9" id="c9">
+                    </td>
+                    <td>
+                        <input type="text" name="g9" id="g9">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Table Topics Speaker #1 <br><select name="n10" id="n10">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w10" id="w10" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c10" id="c10">
+                    </td>
+                    <td>
+                        <input type="text" name="g10" id="g10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Table Topics Speaker #2 <br><select name="n11" id="n11">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w11" id="w11" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c11" id="c11">
+                    </td>
+                    <td>
+                        <input type="text" name="g11" id="g11">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Table Topics Speaker #3 <br><select name="n12" id="n12">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w12" id="w12" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c12" id="c12">
+                    </td>
+                    <td>
+                        <input type="text" name="g12" id="g12">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Table Topics Speaker #4 <br><select name="n13" id="n13">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w13" id="w13" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c13" id="c13">
+                    </td>
+                    <td>
+                        <input type="text" name="g13" id="g13">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Table Topics Speaker #5 <br><select name="n14" id="n14">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w14" id="w14" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c14" id="c14">
+                    </td>
+                    <td>
+                        <input type="text" name="g14" id="g14">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ah Counter <br><select name="n15" id="n15">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w15" id="w15" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c15" id="c15">
+                    </td>
+                    <td>
+                        <input type="text" name="g15" id="g15">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Timer <br><select name="n16" id="n16">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w16" id="w16" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c16" id="c16">
+                    </td>
+                    <td>
+                        <input type="text" name="g16" id="g16">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        General Evaluator <br><select name="n17" id="n17">
+                            <option value="1181045">Sathvik</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" name="w17" id="w17" min="0" required>
+                    </td>
+                    <td>
+                        <input type="text" name="c17" id="c17">
+                    </td>
+                    <td>
+                        <input type="text" name="g17" id="g17">
+                    </td>
+                </tr>
+            </table> <br>
+            <div style="
+            text-align: center";>
+            <input type="submit" value="submit" style="width: 50px;height: 30px;margin: auto;">
+        </div>
+            <br><br>
     </form>
+    <script src="{{ url_for('static',filename='js/save.js') }}"></script>
+    <script>
+        saveProg(['name', 'class', 'section', 'meeting-no', 'date','type','wotd','definition','wuias',
+                  'n1','n2','n3','n4','n5','n6','n7','n8','n9','n10','n11','n12','n13','n14','n15','n16','n17',
+                  'w1','w2','w3','w4','w5','w6','w7','w8','w9','w10','w11','w12','w13','w14','w15','w16','w17',
+                  'c1','c2','c3','c4','c5','c6','c7','c8','c9','c10','c11','c12','c13','c14','c15','c16','c17',
+                  'g1','g2','g3','g4','g5','g6','g7','g8','g9','g10','g11','g12','g13','g14','g15','g16','g17']);
+    </script>
 </body>
 
 </html>
