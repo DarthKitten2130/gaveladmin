@@ -82,9 +82,11 @@
         Report your findings at the end of the meeting.
         <br>
         <br>
-        <b>Word of the Day: <input type="text" name="wotd" id="wotd" style="border: 1px solid black;width:100px"> <br><br>
+        <b>Word of the Day: <input type="text" name="wotd" id="wotd" style="border: 1px solid black;width:100px">
+            <br><br>
 
-            <b><h3>Type of Word:</h3>
+            <b>
+                <h3>Type of Word:</h3>
 
                 <input type="radio" name="type" id="type" value="noun"><label for="noun">Noun</label>
                 <input type="radio" name="type" id="type" value="verb"><label for="verb">Verb</label>
@@ -120,7 +122,8 @@
                         Jovie Zoe
                     </td>
                     <td>
-                        <img src="{{ url_for('static',filename='images/tally.jpg') }}" alt="Sorry, this image is unavailable">
+                        <img src="{{ url_for('static',filename='images/tally.jpg') }}"
+                            alt="Sorry, this image is unavailable">
                     </td>
                     <td>
                         <h4><i>She glided effortlessly through the room</i></h4>
@@ -403,18 +406,18 @@
                 </tr>
             </table> <br>
             <div style="
-            text-align: center";>
-            <input type="submit" value="submit" style="width: 50px;height: 30px;margin: auto;">
-        </div>
+            text-align: center" ;>
+                <input type="submit" value="submit" style="width: 50px;height: 30px;margin: auto;">
+            </div>
             <br><br>
     </form>
     <script src="{{ url_for('static',filename='js/save.js') }}"></script>
     <script>
-        saveProg(['name', 'class', 'section', 'meeting-no', 'date','type','wotd','definition','wuias',
-                  'n1','n2','n3','n4','n5','n6','n7','n8','n9','n10','n11','n12','n13','n14','n15','n16','n17',
-                  'w1','w2','w3','w4','w5','w6','w7','w8','w9','w10','w11','w12','w13','w14','w15','w16','w17',
-                  'c1','c2','c3','c4','c5','c6','c7','c8','c9','c10','c11','c12','c13','c14','c15','c16','c17',
-                  'g1','g2','g3','g4','g5','g6','g7','g8','g9','g10','g11','g12','g13','g14','g15','g16','g17']);
+        saveProg(['name', 'class', 'section', 'meeting-no', 'date', 'type', 'wotd', 'definition', 'wuias',
+            'n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7', 'n8', 'n9', 'n10', 'n11', 'n12', 'n13', 'n14', 'n15', 'n16', 'n17',
+            'w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8', 'w9', 'w10', 'w11', 'w12', 'w13', 'w14', 'w15', 'w16', 'w17',
+            'c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9', 'c10', 'c11', 'c12', 'c13', 'c14', 'c15', 'c16', 'c17',
+            'g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', 'g8', 'g9', 'g10', 'g11', 'g12', 'g13', 'g14', 'g15', 'g16', 'g17']);
     </script>
 </body>
 
