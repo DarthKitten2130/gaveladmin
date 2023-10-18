@@ -8,6 +8,19 @@ app.secret_key = 'root'
 
 db = SQLAlchemy(app)
 
+class Users(db.Model):
+    __tablename__ = 'users'
+
+    id = db.Column(db.String(7),primary_key = True)
+    rollno = db.Column(db.Integer())
+    name = db.Column(db.String(255))
+    role = db.Column(db.String(7))
+    email = db.Column(db.String(255), unique = True)
+    psswd = db.Column(db.String(255))
+    grade = db.Column(db.Integer())
+    section = db.Column(db.String(1))
+    phone = db.Column(db.String(255))
+
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
