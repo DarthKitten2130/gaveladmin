@@ -1,7 +1,12 @@
 from flask import Flask, templating, redirect, request, session
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://darthkitten2228:Bi4E8vlSCodf@ep-twilight-mud-18405172.ap-southeast-1.aws.neon.tech/2023-2024"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'root'
+
+db = SQLAlchemy(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
