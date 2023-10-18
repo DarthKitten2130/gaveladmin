@@ -16,3 +16,12 @@ table,thead,tr,th,td {
     border-collapse: collapse;
     padding: 7px;
 }
+
+li {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+}

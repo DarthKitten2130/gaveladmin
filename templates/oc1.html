@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,154 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/docscss/oc1.css') }}">
     <title>OC Sheet</title>
 </head>
+
 <body>
     <h1><b><u>OC Sheet</u></b></h1>
     <form name="input" id="input">
         <b>MEETING # <input type="number" name="meeting-no" id="meeting-no" min="0" style="width: 30px" required> <br>
-        <br>
-        Filled By: <select name="oc" id="oc" required>
-            <option value="1181045">Sathvik</option>
-        </select>
-        <br>
-        <br>
-        Date: <input type="date" name="date" id="date" required> <br>
-        <br>
-        <div style="text-align: right;">
+            <br>
+            Filled By: <select name="oc" id="oc" required>
+                <option value="1181045">Sathvik</option>
+            </select>
+            <br>
+            <br>
+            Date: <input type="date" name="date" id="date" required> <br>
+            <br>
             Start Time: <input type="time" name="stime" id="stime" required><br><br>
             End Time: <input type="time" name="etime" id="etime" required>
-        </div>
-        Theme: <input type="text" name="theme" id="theme" required><br><br>
-        Word of the Day: <input type="text" name="wotd" id="wotd" required><br><br>    
-        Meaning: <input type="text" name="meaning" id="meaning"> <br><br><br>
+            <br><br>
+            Theme: <input type="text" name="theme" id="theme"><br><br>
+            Word of the Day: <input type="text" name="wotd" id="wotd"><br><br>
+            Meaning: <input type="text" name="meaning" id="meaning"> <br><br><br>
 
-        <h3>Role Takers</h3>
-    </b>
+            <h3>Role Takers</h3>
+            <ol>
+                <li>SAA: <select name="r1" id="r1">
+                        <option value="1181045">Sathvik</option>
+                    </select></li>
+                <li>PO: <select name="r2" id="r2">
+                        <option value="1181045">Sathvik</option>
+                    </select></li>
+                <li>TMOD: <select name="r3" id="r3">
+                        <option value="1181045">Sathvik</option>
+                    </select></li>
+                <li>GE: <select name="r4" id="r4">
+                        <option value="1181045">Sathvik</option>
+                    </select></li>
+                <li>TTM: <select name="r5" id="r5">
+                        <option value="1181045">Sathvik</option>
+                    </select></li>
+                <li>Timer: <select name="r6" id="r6">
+                        <option value="1181045">Sathvik</option>
+                    </select></li>
+                <li>Ah-Counter: <select name="r7" id="r7">
+                        <option value="1181045">Sathvik</option>
+                    </select></li>
+                <li>WMG: <select name="r8" id="r8">
+                        <option value="1181045">Sathvik</option>
+                    </select></li>
+                <li>Listener: <select name="r9" id="r9">
+                        <option value="1181045">Sathvik</option>
+                    </select></li>
+                <li>Vote Counter: <select name="r10" id="r10">
+                        <option value="1181045">Sathvik</option>
+                    </select></li>
+            </ol>
+            <br>
+            <h3>Prepared Speeches</h3>
+
+            <ul>
+                <li>
+                    Speaker 1: <select name="r11" id="r11">
+                        <option value="1181045">Sathvik</option>
+                    </select><br>
+                    Evaluator 1: <select name="r12" id="r12">
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </li>
+                <li>
+                    Speaker 2: <select name="r13" id="r13">
+                        <option value="1181045">Sathvik</option>
+                    </select><br>
+                    Evaluator 2: <select name="r14" id="r14">
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </li>
+                <li>
+                    Speaker 3: <select name="r15" id="r15">
+                        <option value="1181045">Sathvik</option>
+                    </select><br>
+                    Evaluator 3: <select name="r16" id="r16">
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </li>
+            </ul>
+
+            <h3>Table Topics:</h3>
+
+            <ul>
+                <li>
+                    Speaker 1: <select name="r17" id="r17">
+                        <option value="1181045">Sathvik</option>
+                    </select> - Topic: <input type="text" name="t1" id="t1">
+                </li>
+
+                <li>
+                    Speaker 2: <select name="r18" id="r18">
+                        <option value="1181045">Sathvik</option>
+                    </select> - Topic: <input type="text" name="t2" id="t2">
+                </li>
+                <li>
+                    Speaker 3: <select name="r19" id="r19">
+                        <option value="1181045">Sathvik</option>
+                    </select> - Topic: <input type="text" name="t3" id="t3">
+                </li>
+                <li>
+                    Speaker 4: <select name="r20" id="r20">
+                        <option value="1181045">Sathvik</option>
+                    </select> - Topic: <input type="text" name="t4" id="t4">
+                </li>
+                <li>
+                    Speaker 5: <select name="r21" id="r21">
+                        <option value="1181045">Sathvik</option>
+                    </select> - Topic: <input type="text" name="t5" id="t5">
+                </li>
+            </ul>
+
+            <h3>Awards</h3>
+
+            <ul>
+                <li>
+                    Listener of the Day: <select name="r22" id="r22">
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </li>
+                <li>
+                    BTTS: <select name="r22" id="r22">
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </li>
+                <li>
+                    BRT: <select name="r22" id="r22">
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </li>
+                <li>
+                    BPS: <select name="r22" id="r22">
+                        <option value="1181045">Sathvik</option>
+                    </select>
+                </li>
+            </ul>
+
+            <h3>General Aspects</h3> <br>
+
+            <textarea name="ga" id="ga" required></textarea>
+        </b>
+        <div style="
+            text-align: center" ;>
+            <input type="submit" value="submit" style="width: 50px;height: 30px;margin: auto;">
+        </div>
     </form>
 </body>
+
 </html>
