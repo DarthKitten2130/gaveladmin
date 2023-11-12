@@ -1,25 +1,7 @@
-from flask import Flask, templating, redirect, request, session
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, templating
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://darthkitten2228:Bi4E8vlSCodf@ep-twilight-mud-18405172.ap-southeast-1.aws.neon.tech/2023-2024"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'root'
-
-db = SQLAlchemy(app)
-
-class Users(db.Model):
-    __tablename__ = 'users'
-
-    id = db.Column(db.String(7),primary_key = True)
-    rollno = db.Column(db.Integer())
-    name = db.Column(db.String(255))
-    role = db.Column(db.String(7))
-    email = db.Column(db.String(255), unique = True)
-    psswd = db.Column(db.String(255))
-    grade = db.Column(db.Integer())
-    section = db.Column(db.String(1))
-    phone = db.Column(db.String(255))
 
 
 @app.route('/', methods=['GET', 'POST'])
