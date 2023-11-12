@@ -10,3 +10,21 @@ params = {
 conn = psycopg2.connect(**params)
 cursor = conn.cursor()
 
+def new_meeting(meetingid,date):
+    global cursor
+
+    cursor.execute(f"insert into meetings(id,date) values({meetingid},{date})")
+    cursor.execute("commit")
+
+
+def add_sheet(meetingid,type,sheet):
+    global cursor
+
+    meeting_sheet = type+'_sheet'
+
+    cursor.execute(f"update meetings set {meeting_sheet} = {sheet} where id = {meetingid}")
+    cursor.execute("commit")
+
+
+def attendance(grade):
+    pass

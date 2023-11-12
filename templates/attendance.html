@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
+    <title>Attendance</title>
+</head>
+
+<body>
+    <table>
+        <form id="input">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Present
+                </th>
+                <th>
+                    EA
+                </th>
+                <th>
+                    UA
+                </th>
+            </tr>
+            {%for x in result%}
+            <tr>
+                <td>
+                    {{x[name]}}
+                </td>
+                <td>
+                    <input type="radio" name="{{x[id]}}" id="present" value="present">
+                </td>
+                <td>
+                    <input type="radio" name="{{x[id]}}" id="ea" value="ea">
+                </td>
+                <td>
+                    <input type="radio" name="{{x[id]}}" id="ua" value="ua">
+                </td>
+            </tr>
+            {%endfor%}
+        </form>
+    </table>
+</body>
+
+</html>
