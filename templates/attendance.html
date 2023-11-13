@@ -25,19 +25,19 @@
                     UA
                 </th>
             </tr>
-            {%for x in result%}
+            {%for x in results%}
             <tr>
                 <td>
-                    {{x[name]}}
+                    {{x[1]}}
                 </td>
                 <td>
-                    <input type="radio" name="{{x[id]}}" id="present" value="present">
+                    <input type="radio" name="{{x[0]}}" id="present" value="present">
                 </td>
                 <td>
-                    <input type="radio" name="{{x[id]}}" id="ea" value="ea">
+                    <input type="radio" name="{{x[0]}}" id="ea" value="ea">
                 </td>
                 <td>
-                    <input type="radio" name="{{x[id]}}" id="ua" value="ua">
+                    <input type="radio" name="{{x[0]}}" id="ua" value="ua">
                 </td>
             </tr>
             {%endfor%}

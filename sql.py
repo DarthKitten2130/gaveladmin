@@ -21,10 +21,15 @@ def add_sheet(meetingid,type,sheet):
     global cursor
 
     meeting_sheet = type+'_sheet'
-
     cursor.execute(f"update meetings set {meeting_sheet} = {sheet} where id = {meetingid}")
     cursor.execute("commit")
 
 
-def attendance(grade):
-    pass
+def fetch_attendance(grade):
+    global cursor
+
+    cursor.execute(f"select id,name from users where role = 'member' and grade = {grade} and active = true order by rollno")
+
+    results = cursor.fetchall()
+    
+    return results

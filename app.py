@@ -1,4 +1,5 @@
 from flask import Flask, templating
+from sql import *
 
 app = Flask(__name__)
 app.secret_key = 'root'
@@ -46,7 +47,9 @@ def oc():
 
 @app.route('/attendance', methods=['GET', 'POST'])
 def attendance():
-    return templating.render_template("attendance.html")
+    results = fetch_attendance(10)
+    return templating.render_template("attendance.html",results=results)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
