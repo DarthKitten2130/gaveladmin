@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/docscss/attendance.css') }}">
+
     <title>Attendance</title>
 </head>
 
 <body>
     <table>
         <form id="input">
+            <tr>
+                <th colspan="4"><h1>ATTENDANCE</h1></th>
+            </tr>
             <tr>
                 <th>
                     Name
@@ -41,8 +46,10 @@
                 </td>
             </tr>
             {%endfor%}
+        </table> <br> <br>
+        <input type="reset" value="Reset Attendance"> <br> <br>
+        <input type="submit" value="Submit Attendance">
         </form>
-    </table>
 </body>
 
 </html>

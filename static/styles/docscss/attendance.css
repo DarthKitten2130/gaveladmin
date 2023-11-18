@@ -1,0 +1,14 @@
+table,tr,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+body {
+    padding: 30px
+}
+
+input[type="submit"],input[type="reset"] {
+    border: 1px solid black;
+}
