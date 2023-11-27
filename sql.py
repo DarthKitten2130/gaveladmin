@@ -25,11 +25,15 @@ def add_sheet(meetingid,type,sheet):
     cursor.execute("commit")
 
 
-def fetch_attendance(grade):
+def fetch_attendance():
     global cursor
 
-    cursor.execute(f"select id,name from users where role = 'member' and grade = {grade} and active = true order by rollno")
+    cursor.execute(f"select id,name from users where role = 'member' and active = true order by rollno")
 
     results = cursor.fetchall()
+
+    result1 = []
+    for result in results:
+        result1.append({"id":result[0],"name":result[1]})
     
-    return results
+    return result1

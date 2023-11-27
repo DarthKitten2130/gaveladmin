@@ -47,9 +47,8 @@ def oc():
 
 @app.route('/attendance', methods=['GET', 'POST'])
 def attendance():
-    results = fetch_attendance(10)
+    results = fetch_attendance()
     return templating.render_template("attendance.html",results=results)
-
 
 if __name__ == "__main__":
     app.run(debug=True)

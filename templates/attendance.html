@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/docscss/attendance.css') }}">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
 
     <title>Attendance</title>
 </head>
 
-<body>
+<body x-data="{grade: '', results: {{results}}}">
+    <br>
+    <br>
     <table>
+        <select name="grade" id="grade" x-model="grade">
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
         <form id="input">
             <tr>
                 <th colspan="4"><h1>ATTENDANCE</h1></th>
@@ -30,22 +39,21 @@
                     UA
                 </th>
             </tr>
-            {%for x in results%}
+            <template x-for="x in results">
             <tr>
-                <td>
-                    {{x[1]}}
+                <td x-text="x.name">
                 </td>
                 <td>
-                    <input type="radio" name="{{x[0]}}" id="present" value="present">
+                    <input type="radio" x-bind:name="x.id" id="present" value="present">
                 </td>
                 <td>
-                    <input type="radio" name="{{x[0]}}" id="ea" value="ea">
+                    <input type="radio" x-bind:name="x.id" id="ea" value="ea">
                 </td>
                 <td>
-                    <input type="radio" name="{{x[0]}}" id="ua" value="ua">
+                    <input type="radio" x-bind:name="x.id" id="ua" value="ua">
                 </td>
+            </template>
             </tr>
-            {%endfor%}
         </table> <br> <br>
         <input type="reset" value="Reset Attendance"> <br> <br>
         <input type="submit" value="Submit Attendance">
