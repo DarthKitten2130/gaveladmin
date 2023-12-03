@@ -15,7 +15,7 @@
     <br>
     <br>
     <table>
-        <select name="grade" id="grade" x-model="grade">
+        <select name="grade" id="grade" x-model="grade" style="text-align:center;font-size:30px;">
             <option value="9">9</option>
             <option value="10">10</option>
             <option value="11">11</option>
@@ -39,7 +39,7 @@
                     UA
                 </th>
             </tr>
-            <template x-for="x in results">
+            <template x-for="x in results[grade]">
             <tr>
                 <td x-text="x.name">
                 </td>
@@ -55,8 +55,7 @@
             </template>
             </tr>
         </table> <br> <br>
-        <input type="reset" value="Reset Attendance"> <br> <br>
-        <input type="submit" value="Submit Attendance">
+        <input type="submit" value="Submit Attendance" style="font-size:20px">
         </form>
 </body>
 

@@ -28,12 +28,15 @@ def add_sheet(meetingid,type,sheet):
 def fetch_attendance():
     global cursor
 
-    cursor.execute(f"select id,name from users where role = 'member' and active = true order by rollno")
+    cursor.execute(f"select id,name,grade from users where role = 'member' and active = true order by rollno")
 
     results = cursor.fetchall()
 
-    result1 = []
+    result1 = {9: [],
+               10:[],
+               11:[],
+               12:[]}
     for result in results:
-        result1.append({"id":result[0],"name":result[1]})
+        result1[result[2]].append({"id":result[0],"name":result[1]})
     
     return result1
