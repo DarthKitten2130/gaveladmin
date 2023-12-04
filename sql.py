@@ -40,3 +40,32 @@ def fetch_attendance():
         result1[result[2]].append({"id":result[0],"name":result[1]})
     
     return result1
+
+def fetch_roletakers():
+    global cursor
+
+    cursor.execute(f"select id,name,grade,role from users where active = true order by rollno")
+
+    results = cursor.fetchall()
+
+    result1 = {9: [],
+                10:[],
+                11:[],
+                12:[]}
+    results2 = []
+    
+    for result in results:
+        match result[3]:
+            case 'officer':
+                results2.append({"id":result[0],"name":result[1]})
+                
+
+            case 'member':
+                result1[result[2]].append({"id":result[0],"name":result[1]})
+    
+    for grade in result1.values():
+        grade.extend(results2)
+    
+    print(results2)
+
+    return result1
