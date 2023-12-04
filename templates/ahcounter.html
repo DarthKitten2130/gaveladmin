@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ah Counter</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/docscss/ahcounter.css') }}">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+</head>
+<body x-data="{grade: '',results: {{results}}}">
+    <h1><b><u>Ah Counter's Sheet</u></b></h1>
+    <br>
+    <br>
+    <select name="grade" id="grade" x-model="grade" style="text-align:center;font-size:30px;">
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <table>
+        <tr>
+            <td>
+                <b>Name</b>
+            </td>
+            <td>
+                <select name="name" id="name">
+                     <template x-for="x in results[grade]">
+                        <option x-bind:value="x.id" x-text="x.name"></option>
+                     </template>
+                </select>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

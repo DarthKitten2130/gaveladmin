@@ -48,20 +48,20 @@ def fetch_roletakers():
 
     results = cursor.fetchall()
 
-    result1 = {9: [],
-                10:[],
-                11:[],
-                12:[]}
+    result1 = {'9': [],
+                '10':[],
+                '11':[],
+                '12':[]}
     results2 = []
     
     for result in results:
         match result[3]:
-            case 'officer':
+            case 'officer' | 'oc':
                 results2.append({"id":result[0],"name":result[1]})
                 
 
             case 'member':
-                result1[result[2]].append({"id":result[0],"name":result[1]})
+                result1[str(result[2])].append({"id":result[0],"name":result[1]})
     
     for grade in result1.values():
         grade.extend(results2)
