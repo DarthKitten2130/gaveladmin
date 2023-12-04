@@ -8,29 +8,76 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/docscss/ahcounter.css') }}">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
 </head>
-<body x-data="{grade: '',results: {{results}}}">
+<body x-data="{grade: '9',results: {{results}}}">
     <h1><b><u>Ah Counter's Sheet</u></b></h1>
     <br>
     <br>
-    <select name="grade" id="grade" x-model="grade" style="text-align:center;font-size:30px;">
+    <select name="grade" id="grade" x-model="grade" style="text-align:center;font-size:30px;border:1px solid black">
         <option value="9">9</option>
         <option value="10">10</option>
         <option value="11">11</option>
         <option value="12">12</option>
     </select>
+    <br><br>
+    
     <table>
         <tr>
-            <td>
+            <td style="width: 30%">
                 <b>Name</b>
             </td>
             <td>
-                <select name="name" id="name">
+                <select name="name" id="name" required style="width: 100%;height: 100%">
                      <template x-for="x in results[grade]">
                         <option x-bind:value="x.id" x-text="x.name"></option>
                      </template>
                 </select>
             </td>
         </tr>
+        <tr>
+            <td>
+                <b>Section</b>
+            </td>
+            <td>
+                <select name="section" id="section" required style="width: 100%">
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                    <option value="d">D</option>
+                    <option value="e">E</option>
+                    <option value="f">F</option>
+                    <option value="g">G</option>
+                    <option value="h">H</option>
+                    <option value="i">I</option>
+                    <option value="j">J</option>
+                    <option value="k">K</option>
+                    <option value="l">L</option>
+                    <option value="m">M</option>
+                    <option value="n">N</option>
+                    <option value="o">O</option>
+                    <option value="p">P</option>
+                    <option value="q">Q</option>
+                    <option value="r">R</option>
+                    <option value="s">S</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+        <td>
+            <b>Meeting No.</b>
+        </td>
+        <td>
+            <input type="number" name="meetingno" id="meetingno" required min="0" style="width: 99%;">
+        </td>
+    </tr>
+        <tr>
+            <td>
+                <b>Date</b>
+            </td>
+            <td>
+                <input type="date" name="date" id="date" required style="width: 99%;">
+            </td>
+        </tr>
+
     </table>
 </body>
 </html>
