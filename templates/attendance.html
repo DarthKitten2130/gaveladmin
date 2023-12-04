@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/doc.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/docscss/attendance.css') }}">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+
+    <title>Attendance</title>
+</head>
+
+<body x-data="{grade: '', results: {{results}}}">
+    <br>
+    <br>
+    <table>
+        <select name="grade" id="grade" x-model="grade" style="text-align:center;font-size:30px;">
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <form id="input">
+            <tr>
+                <th colspan="4"><h1>ATTENDANCE</h1></th>
+            </tr>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Present
+                </th>
+                <th>
+                    EA
+                </th>
+                <th>
+                    UA
+                </th>
+            </tr>
+            <template x-for="x in results[grade]">
+            <tr>
+                <td x-text="x.name">
+                </td>
+                <td>
+                    <input type="radio" x-bind:name="x.id" id="present" value="present">
+                </td>
+                <td>
+                    <input type="radio" x-bind:name="x.id" id="ea" value="ea">
+                </td>
+                <td>
+                    <input type="radio" x-bind:name="x.id" id="ua" value="ua">
+                </td>
+            </template>
+            </tr>
+        </table> <br> <br>
+        <input type="submit" value="Submit Attendance" style="font-size:20px">
+        </form>
+</body>
+
+</html>
